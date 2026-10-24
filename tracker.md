@@ -1,0 +1,19 @@
+- [x]  Api info
+- [x]  Absence
+- [x]  Attachment
+- [ ]  Classbook
+- [x]  Events
+- [ ]  GDPR
+- [x]  Homework
+- [ ]  komens
+- [ ]  lesson
+- [ ]  marks
+- [ ]  measures
+- [ ]  payments
+- [ ]  subjects
+- [ ]  substitutions
+- [ ]  themes
+- [ ]  timetable
+- [ ]  user
+- [ ]  web
+- [ ]  what if
