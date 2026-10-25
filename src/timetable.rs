@@ -1,7 +1,7 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 
-use crate::StdType;
+use crate::{StdClassGroup, StdType};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
@@ -9,7 +9,7 @@ pub struct Timetable {
     pub hours: Vec<TimetableHour>,
     pub days: Vec<TimetableDay>,
     pub classes: Vec<StdType>,
-    pub groups: Vec<TimetableGroup>,
+    pub groups: Vec<StdClassGroup>,
     pub subjects: Vec<StdType>,
     pub teachers: Vec<StdType>,
     pub rooms: Vec<StdType>,
@@ -60,13 +60,4 @@ pub struct TimetableChange {
     pub time: String,
     pub type_abbrev: Option<String>,
     pub type_name: Option<String>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct TimetableGroup {
-    pub class_id: String,
-    pub id: String,
-    pub abbrev: String,
-    pub name: String,
 }

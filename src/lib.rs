@@ -30,14 +30,11 @@ pub use lesson::{
 };
 pub use marks::{Mark, Marks, SubjectMarks};
 pub use payments::{AddBalance, ClassfundPayments, ClassfundSummary, Payment, PaymentMonthlyData};
-pub use stdtype::StdType;
+pub use stdtype::{StdClassGroup, StdType};
 pub use subjects::{Subject, Subjects};
 pub use substitutions::{SubstitutionChange, Substitutions};
 pub use themes::{Theme, Themes};
-pub use timetable::{
-    Timetable, TimetableAtom, TimetableChange, TimetableDay, TimetableGroup,
-    TimetableHour,
-};
+pub use timetable::{Timetable, TimetableAtom, TimetableChange, TimetableDay, TimetableHour};
 pub use user::{Module, User};
 pub use webmodules::{Webmodule, Webmodules};
 pub use what_if::{WhatIfResult, WhatIfResultMark, WhatIfStartingEnviromentMark};

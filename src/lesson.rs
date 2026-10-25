@@ -1,5 +1,7 @@
 use serde::{Deserialize, Serialize};
 
+use crate::StdClassGroup;
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct LessonAbsence {
@@ -29,7 +31,7 @@ pub struct LessonHour {
 pub struct AbsencesGroup {
     pub students_absences: Vec<LessonStudentAbsence>,
     pub absent_type_options: Vec<AbsentTypeOption>,
-    //   "Group": {"ClassId": "1A", "Id": "AA", "Abbrev": "1.A", "Name": "1.A"}
+    pub group: StdClassGroup,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
