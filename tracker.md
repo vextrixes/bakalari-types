@@ -14,7 +14,7 @@
 - [x]  subjects
 - [x]  substitutions
 - [x]  themes
-- [ ]  timetable
+- [x]  timetable
 - [x]  user
 - [x]  user SettingModules
 - [x]  web

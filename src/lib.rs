@@ -12,6 +12,7 @@ mod stdtype;
 mod subjects;
 mod substitutions;
 mod themes;
+mod timetable;
 mod user;
 mod webmodules;
 mod what_if;
@@ -33,6 +34,10 @@ pub use stdtype::StdType;
 pub use subjects::{Subject, Subjects};
 pub use substitutions::{SubstitutionChange, Substitutions};
 pub use themes::{Theme, Themes};
+pub use timetable::{
+    Timetable, TimetableAtom, TimetableChange, TimetableClass, TimetableDay, TimetableGroup,
+    TimetableHour,
+};
 pub use user::{Module, User};
 pub use webmodules::{Webmodule, Webmodules};
 pub use what_if::{WhatIfResult, WhatIfResultMark, WhatIfStartingEnviromentMark};
