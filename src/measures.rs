@@ -4,16 +4,16 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct Measures {
-    pedagogical_measures: Vec<PedagogicalMeasure>,
+    pub pedagogical_measures: Vec<PedagogicalMeasure>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct PedagogicalMeasure {
-    school_year: String,
-    semester: String,
-    type_label: String,
-    date: DateTime<Utc>,
-    type_id: String,
-    text: String,
+    pub school_year: String,
+    pub semester: String,
+    pub type_label: String,
+    pub date: DateTime<Utc>,
+    pub type_id: String,
+    pub text: String,
 }
