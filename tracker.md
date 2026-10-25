@@ -3,7 +3,7 @@
 - [x]  Attachment
 - [ ]  Classbook
 - [x]  Events
-- [ ]  GDPR
+- [x]  GDPR
 - [x]  Homework
 - [ ]  komens
 - [ ]  lesson
@@ -15,6 +15,6 @@
 - [x]  themes
 - [ ]  timetable
 - [x]  user
-- [ ]  user SettingModules
+- [x]  user SettingModules
 - [ ]  web
 - [ ]  what if

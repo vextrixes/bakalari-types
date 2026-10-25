@@ -1,4 +1,6 @@
 use serde::{Deserialize, Serialize};
+use serde_json::Value;
+use std::collections::HashMap;
 
 use crate::StdType;
 
@@ -17,7 +19,7 @@ pub struct User {
     pub user_type_text: String,
     pub study_year: u8,
     pub enabled_modules: Vec<Module>,
-    //TODO: user SettingModules
+    pub setting_modules: HashMap<String, Value>,
     pub full_user_name: String,
     pub students: Vec<Student>,
 }
