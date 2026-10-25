@@ -13,6 +13,7 @@ mod subjects;
 mod substitutions;
 mod themes;
 mod user;
+mod webmodules;
 mod what_if;
 
 pub use absence::{Absence, AbsenceListItem, SubjectAbsence};
@@ -33,4 +34,5 @@ pub use subjects::{Subject, Subjects};
 pub use substitutions::{SubstitutionChange, Substitutions};
 pub use themes::{Theme, Themes};
 pub use user::{Module, User};
+pub use webmodules::{Webmodule, Webmodules};
 pub use what_if::{WhatIfResult, WhatIfResultMark, WhatIfStartingEnviromentMark};

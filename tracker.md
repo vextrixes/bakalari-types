@@ -17,5 +17,5 @@
 - [ ]  timetable
 - [x]  user
 - [x]  user SettingModules
-- [ ]  web
+- [x]  web
 - [x]  what if
