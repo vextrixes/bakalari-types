@@ -14,6 +14,7 @@
 - [ ]  substitutions
 - [ ]  themes
 - [ ]  timetable
-- [ ]  user
+- [x]  user
+- [ ]  user SettingModules
 - [ ]  web
 - [ ]  what if

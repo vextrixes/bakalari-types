@@ -5,6 +5,7 @@ mod error;
 mod events;
 mod homework;
 mod stdtype;
+mod user;
 
 pub use absence::{Absence, AbsenceListItem, SubjectAbsence};
 pub use api_info::ApiInfo;
@@ -13,3 +14,4 @@ pub use error::Error;
 pub use events::Events;
 pub use homework::{Homework, HomeworkListItem};
 pub use stdtype::StdType;
+pub use user::{Module, User};
