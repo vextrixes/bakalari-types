@@ -6,7 +6,8 @@
 - [x]  GDPR
 - [x]  Homework
 - [ ]  komens
-- [ ]  lesson
+- [x]  lesson
+- [ ]  lesson studentsTimetable
 - [x]  marks
 - [ ]  measures
 - [x]  payments

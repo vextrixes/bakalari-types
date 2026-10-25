@@ -5,6 +5,7 @@ mod error;
 mod events;
 mod gdpr;
 mod homework;
+mod lesson;
 mod marks;
 mod payments;
 mod stdtype;
@@ -21,6 +22,10 @@ pub use error::Error;
 pub use events::{Event, Events, Time};
 pub use gdpr::{GDPRcommissioner, GDPRcommissioners};
 pub use homework::{Homework, HomeworkListItem};
+pub use lesson::{
+    AbsencesGroup, AbsentTypeOption, LessonAbsence, LessonHour, LessonLastTheme,
+    LessonStudentAbsence, LessonStudentInfo,
+};
 pub use marks::{Mark, Marks, SubjectMarks};
 pub use payments::{AddBalance, ClassfundPayments, ClassfundSummary, Payment, PaymentMonthlyData};
 pub use stdtype::StdType;
