@@ -12,7 +12,7 @@
 - [ ]  payments
 - [x]  subjects
 - [ ]  substitutions
-- [ ]  themes
+- [x]  themes
 - [ ]  timetable
 - [x]  user
 - [ ]  user SettingModules

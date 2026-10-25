@@ -18,7 +18,7 @@ pub struct User {
     pub study_year: u8,
     pub enabled_modules: Vec<Module>, //TODO: user SettingModules
     pub full_user_name: String,
-    pub students: Vec<Student>
+    pub students: Vec<Student>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -28,12 +28,11 @@ pub struct Module {
     pub rights: Vec<String>,
 }
 
-
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct Student{
+pub struct Student {
     full_name: String,
     class: Vec<StdType>,
     school_type: String,
-    study_year: u8
+    study_year: u8,
 }

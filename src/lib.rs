@@ -7,6 +7,7 @@ mod homework;
 mod marks;
 mod stdtype;
 mod subjects;
+mod themes;
 mod user;
 
 pub use absence::{Absence, AbsenceListItem, SubjectAbsence};
@@ -18,4 +19,5 @@ pub use homework::{Homework, HomeworkListItem};
 pub use marks::{Mark, Marks, SubjectMarks};
 pub use stdtype::StdType;
 pub use subjects::{Subject, Subjects};
+pub use themes::{Theme, Themes};
 pub use user::{Module, User};
