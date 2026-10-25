@@ -29,3 +29,9 @@
 - [ ] Enum for user module names and rights
 - [ ] user setting modules types
 - [ ] checking for nullable types
+
+# Features
+- [ ] OpenApi schema generation
+- [ ] documentation
+- [ ] tests
+- [ ] constructors
