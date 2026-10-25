@@ -13,13 +13,13 @@ pub struct Absence {
 #[serde(rename_all = "PascalCase")]
 pub struct AbsenceListItem {
     pub date: chrono::DateTime<Utc>,
-    pub unsolved: i8,
-    pub ok: i8,
-    pub missed: i8,
-    pub late: i8,
-    pub soon: i8,
-    pub school: i8,
-    pub distance_teaching: i8,
+    pub unsolved: u16,
+    pub ok: u16,
+    pub missed: u16,
+    pub late: u16,
+    pub soon: u16,
+    pub school: u16,
+    pub distance_teaching: u16,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

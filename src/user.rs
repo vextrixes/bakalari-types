@@ -16,7 +16,8 @@ pub struct User {
     pub user_type: String,
     pub user_type_text: String,
     pub study_year: u8,
-    pub enabled_modules: Vec<Module>, //TODO: user SettingModules
+    pub enabled_modules: Vec<Module>,
+    //TODO: user SettingModules
     pub full_user_name: String,
     pub students: Vec<Student>,
 }
