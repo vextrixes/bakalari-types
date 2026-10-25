@@ -10,7 +10,7 @@
 - [ ]  marks
 - [ ]  measures
 - [ ]  payments
-- [ ]  subjects
+- [x]  subjects
 - [ ]  substitutions
 - [ ]  themes
 - [ ]  timetable

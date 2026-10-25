@@ -4,8 +4,8 @@ use crate::StdType;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct User{
-    #[serde(rename="UserUID")]
+pub struct User {
+    #[serde(rename = "UserUID")]
     pub user_uid: String,
     pub campaign_category_code: String,
     pub class: StdType,
@@ -15,13 +15,12 @@ pub struct User{
     pub user_type: String,
     pub user_type_text: String,
     pub study_year: u8,
-    pub enabled_modules: Vec<Module>
-    //TODO: user SettingModules
+    pub enabled_modules: Vec<Module>, //TODO: user SettingModules
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct Module{
+pub struct Module {
     pub module: String,
-    pub rights: Vec<String>
+    pub rights: Vec<String>,
 }
