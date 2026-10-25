@@ -7,6 +7,12 @@ use crate::StdType;
 #[serde(rename_all = "PascalCase")]
 pub struct Marks {
     pub subjects: Vec<SubjectMarks>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub struct SubjectMarks {
+    pub marks: Vec<Mark>,
     pub subject: StdType,
     pub average_text: String,
     pub temporary_mark: String,
@@ -14,12 +20,6 @@ pub struct Marks {
     pub temporary_mark_note: String,
     pub points_only: bool,
     pub mark_prediction_enabled: bool,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct SubjectMarks {
-    pub marks: Vec<Mark>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
