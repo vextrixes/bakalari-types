@@ -29,7 +29,7 @@ pub use lesson::{
     AbsencesGroup, AbsentTypeOption, LessonAbsence, LessonHour, LessonLastTheme,
     LessonStudentAbsence, LessonStudentInfo,
 };
-pub use marks::{Mark, Marks, SubjectMarks};
+pub use marks::{Mark, Marks, SubjectMarks, MarksFinal, CertificateTerm, FinalMark};
 pub use measures::{Measures, PedagogicalMeasure};
 pub use payments::{AddBalance, ClassfundPayments, ClassfundSummary, Payment, PaymentMonthlyData};
 pub use stdtype::{StdClassGroup, StdType};

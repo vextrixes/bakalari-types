@@ -46,3 +46,39 @@ pub struct Mark {
     pub confirmed_by: Option<String>,
     pub mark_confirmation_state: String,
 }
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub struct MarksFinal {
+    pub certificate_terms: Vec<CertificateTerm>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub struct CertificateTerm {
+    pub final_marks: Vec<FinalMark>,
+    pub subjects: StdType,
+    pub grade_name: String,
+    pub grade: u8,
+    pub year_in_school: u8,
+    pub school_year: String,
+    pub semester: String,
+    pub semester_name: String,
+    pub repeated: bool,
+    pub closed: bool,
+    pub achievement_text: String,
+    pub marks_average: f64,
+    pub absent_hours: u16,
+    pub not_excused_hours: u16,
+    pub certificate_date: DateTime<Utc>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub struct FinalMark {
+    pub mark_date: DateTime<Utc>,
+    pub edit_date: DateTime<Utc>,
+    pub mark_text: String,
+    pub subject_id: String,
+    pub id: String,
+}

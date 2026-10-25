@@ -9,7 +9,7 @@
 - [x]  lesson
 - [ ]  lesson studentsTimetable
 - [x]  marks
-- [ ] marks final
+- [x] marks final
 - [x]  measures
 - [x]  payments
 - [x]  subjects
