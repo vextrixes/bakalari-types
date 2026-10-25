@@ -9,7 +9,7 @@
 - [ ]  lesson
 - [x]  marks
 - [ ]  measures
-- [ ]  payments
+- [x]  payments
 - [x]  subjects
 - [ ]  substitutions
 - [x]  themes
