@@ -3,8 +3,8 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct Webmodules {
-    web_modules: Vec<Webmodule>,
-    dashboard: Webmodule,
+    pub web_modules: Vec<Webmodule>,
+    pub dashboard: Webmodule,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
