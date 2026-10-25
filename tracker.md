@@ -7,7 +7,7 @@
 - [x]  Homework
 - [ ]  komens
 - [ ]  lesson
-- [ ]  marks
+- [x]  marks
 - [ ]  measures
 - [ ]  payments
 - [x]  subjects
