@@ -34,8 +34,8 @@ pub struct Module {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct Student {
-    full_name: String,
-    class: Vec<StdType>,
-    school_type: String,
-    study_year: u8,
+    pub full_name: String,
+    pub class: Vec<StdType>,
+    pub school_type: String,
+    pub study_year: u8,
 }

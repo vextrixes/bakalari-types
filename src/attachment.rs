@@ -3,8 +3,8 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct Attachment {
-    id: String,
-    name: String,
-    r#type: String,
-    size: u64,
+    pub id: String,
+    pub name: String,
+    pub r#type: String,
+    pub size: u64,
 }

@@ -1,10 +1,19 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 
+use crate::StdType;
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct Marks {
     pub subjects: Vec<SubjectMarks>,
+    pub subject: StdType,
+    pub average_text: String,
+    pub temporary_mark: String,
+    pub subject_note: String,
+    pub temporary_mark_note: String,
+    pub points_only: bool,
+    pub mark_prediction_enabled: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

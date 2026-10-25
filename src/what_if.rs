@@ -6,11 +6,11 @@ use crate::StdType;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct WhatIfStartingEnviromentMark {
-    id: String,
-    mark_text: String,
-    weight: u8,
-    max_points: u16,
-    subject_id: String,
+    pub id: String,
+    pub mark_text: String,
+    pub weight: u8,
+    pub max_points: u16,
+    pub subject_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

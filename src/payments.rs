@@ -31,6 +31,8 @@ pub struct Payment {
     pub amount: i64,
 }
 
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
 pub struct AddBalance {
     pub instructions: String,
     pub bank_account: String,

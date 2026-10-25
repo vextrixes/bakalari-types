@@ -18,7 +18,7 @@ pub use absence::{Absence, AbsenceListItem, SubjectAbsence};
 pub use api_info::ApiInfo;
 pub use attachment::Attachment;
 pub use error::Error;
-pub use events::Events;
+pub use events::{Event, Events, Time};
 pub use gdpr::{GDPRcommissioner, GDPRcommissioners};
 pub use homework::{Homework, HomeworkListItem};
 pub use marks::{Mark, Marks, SubjectMarks};
