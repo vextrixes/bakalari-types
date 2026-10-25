@@ -24,7 +24,7 @@
 - [x]  what if
 
 # Edits of an implementations
-- [x] school type Enum
+- [ ] school type Enum
 - [ ] user type Enum
 - [ ] Enum for user module names and rights
 - [ ] user setting modules types
