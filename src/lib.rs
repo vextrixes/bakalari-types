@@ -8,6 +8,7 @@ mod marks;
 mod payments;
 mod stdtype;
 mod subjects;
+mod substitutions;
 mod themes;
 mod user;
 
@@ -18,8 +19,9 @@ pub use error::Error;
 pub use events::Events;
 pub use homework::{Homework, HomeworkListItem};
 pub use marks::{Mark, Marks, SubjectMarks};
-pub use payments::{ClassfundPayments, ClassfundSummary, Payment, PaymentMonthlyData, AddBalance};
+pub use payments::{AddBalance, ClassfundPayments, ClassfundSummary, Payment, PaymentMonthlyData};
 pub use stdtype::StdType;
 pub use subjects::{Subject, Subjects};
+pub use substitutions::{SubstitutionChange, Substitutions};
 pub use themes::{Theme, Themes};
 pub use user::{Module, User};

@@ -11,7 +11,7 @@
 - [ ]  measures
 - [x]  payments
 - [x]  subjects
-- [ ]  substitutions
+- [x]  substitutions
 - [x]  themes
 - [ ]  timetable
 - [x]  user
