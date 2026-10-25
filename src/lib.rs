@@ -35,7 +35,7 @@ pub use subjects::{Subject, Subjects};
 pub use substitutions::{SubstitutionChange, Substitutions};
 pub use themes::{Theme, Themes};
 pub use timetable::{
-    Timetable, TimetableAtom, TimetableChange, TimetableClass, TimetableDay, TimetableGroup,
+    Timetable, TimetableAtom, TimetableChange, TimetableDay, TimetableGroup,
     TimetableHour,
 };
 pub use user::{Module, User};

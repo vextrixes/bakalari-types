@@ -8,7 +8,7 @@ use crate::StdType;
 pub struct Timetable {
     pub hours: Vec<TimetableHour>,
     pub days: Vec<TimetableDay>,
-    pub classes: Vec<TimetableClass>,
+    pub classes: Vec<StdType>,
     pub groups: Vec<TimetableGroup>,
     pub subjects: Vec<StdType>,
     pub teachers: Vec<StdType>,
@@ -60,14 +60,6 @@ pub struct TimetableChange {
     pub time: String,
     pub type_abbrev: Option<String>,
     pub type_name: Option<String>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct TimetableClass {
-    pub id: String,
-    pub abbrev: String,
-    pub name: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
