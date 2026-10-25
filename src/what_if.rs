@@ -5,7 +5,7 @@ use crate::StdType;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct WhatIfStartingEnviromentMark {
+pub struct WhatIfStartingEnvironmentMark {
     pub id: String,
     pub mark_text: String,
     pub weight: u8,

@@ -11,7 +11,7 @@ pub struct User {
     pub user_uid: String,
     pub campaign_category_code: String,
     pub class: StdType,
-    // TeacherClasses: Option TODO
+    // TeacherClasses: Option<> TODO unknown
     pub full_name: String,
     pub school_organization_name: String,
     pub school_type: Option<String>,

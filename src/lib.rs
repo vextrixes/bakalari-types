@@ -7,6 +7,7 @@ mod gdpr;
 mod homework;
 mod lesson;
 mod marks;
+mod measures;
 mod payments;
 mod stdtype;
 mod subjects;
@@ -29,6 +30,7 @@ pub use lesson::{
     LessonStudentAbsence, LessonStudentInfo,
 };
 pub use marks::{Mark, Marks, SubjectMarks};
+pub use measures::{Measures, PedagogicalMeasure};
 pub use payments::{AddBalance, ClassfundPayments, ClassfundSummary, Payment, PaymentMonthlyData};
 pub use stdtype::{StdClassGroup, StdType};
 pub use subjects::{Subject, Subjects};
@@ -37,4 +39,4 @@ pub use themes::{Theme, Themes};
 pub use timetable::{Timetable, TimetableAtom, TimetableChange, TimetableDay, TimetableHour};
 pub use user::{Module, User};
 pub use webmodules::{Webmodule, Webmodules};
-pub use what_if::{WhatIfResult, WhatIfResultMark, WhatIfStartingEnviromentMark};
+pub use what_if::{WhatIfResult, WhatIfResultMark, WhatIfStartingEnvironmentMark};

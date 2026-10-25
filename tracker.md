@@ -10,7 +10,7 @@
 - [ ]  lesson studentsTimetable
 - [x]  marks
 - [ ] marks final
-- [ ]  measures
+- [x]  measures
 - [x]  payments
 - [x]  subjects
 - [x]  substitutions
