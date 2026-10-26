@@ -60,7 +60,7 @@ pub struct AbsentTypeOption {
     pub absent_kind_enabled: bool,
     pub absent_kind_required: bool,
     pub absent_note_enabled: bool,
-    pub absent_kinds: Vec<StdType>
+    pub absent_kinds: Vec<StdType>,
     pub next_absent_type: String,
 }
 
