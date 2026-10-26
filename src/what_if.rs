@@ -42,7 +42,7 @@ pub struct WhatIfResultMark {
     pub is_new: bool,
     pub is_points: bool,
     pub calculated_mark_text: String,
-    //ClassRankText: Option unknown,
+    pub class_rank_text: String,
     pub id: String,
     pub points_text: String,
     pub max_points: u16,

@@ -19,7 +19,7 @@ pub struct Event {
     pub classes: Vec<StdType>,
     //class_sets: unknown
     pub teachers: Vec<StdType>,
-    //teacher_sets: unknown
+    // teacher_sets: Vec<StdType>?
     pub rooms: Vec<StdType>,
     //room_sets: unknown
     pub students: Vec<StdType>,

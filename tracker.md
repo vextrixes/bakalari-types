@@ -43,7 +43,7 @@
 - [ ] class_sets (event.rs) fix unknown type
 - [ ] teacher_sets (event.rs) fix unknown type
 - [ ] room_sets (event.rs) fix unknown type
-- [ ] ClassRankText (what_if.rs) fix unknown type
+- [x] ClassRankText (what_if.rs) fix unknown type
 - [ ] ClassBookRecordId (lesson.rs) fix unknown type
 - [ ] Absences (lesson.rs) fix unknown type
-- [ ] AbsentKinds (lesson.rs) fix unknown type
+- [x] AbsentKinds (lesson.rs) fix unknown type

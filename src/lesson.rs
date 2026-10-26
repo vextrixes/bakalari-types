@@ -40,6 +40,7 @@ pub struct LessonStudentAbsence {
     pub student: LessonStudentInfo,
     //    "Absences": [], unknown
     pub student_released: bool,
+    pub school_event_ids: Option<Vec<String>>
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -59,7 +60,7 @@ pub struct AbsentTypeOption {
     pub absent_kind_enabled: bool,
     pub absent_kind_required: bool,
     pub absent_note_enabled: bool,
-    // AbsentKinds: [], unknown
+    pub absent_kinds: Vec<StdType>
     pub next_absent_type: String,
 }
 
