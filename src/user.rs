@@ -15,13 +15,22 @@ pub struct UserInfo {
     pub full_name: String, //check nullable
     pub school_organization_name: Option<String>,
     pub school_type: Option<String>,
-    pub user_type: String, //Enum "controller", "parents", "student", "teacher"
+    pub user_type: UserType,
     pub user_type_text: String,
     pub study_year: Option<i64>,
     pub enabled_modules: Vec<Module>,
     pub setting_modules: HashMap<String, Value>, // TODO: Setting Module
     pub full_user_name: Option<String>,
     pub students: Vec<UserInfoStudent>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub enum UserType {
+    Controller,
+    Parents,
+    Student,
+    Teacher,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -36,6 +45,37 @@ pub struct Module {
 pub struct UserInfoStudent {
     pub full_name: String,
     pub class: Vec<SchoolClass>,
-    pub school_type: String, //Enum "BasicArtSchool","BasicPracticalSchool","BasicSchool","BasicSpecialSchool","BoardingHouse","ChildrensHome","Club","Conservatory","EconomicSection","Gymnasium","HigerProfessionalSchool","Kindergarten","OtherSchool","OtherType","PracticalSchool","SchoolCanteen","SchoolClub","SchoolService","SecondarySchool","SecondaryVocationalSchool","SportGymnasium","SuperiorOrganization","TechnicalSchool","University","Unknown","VocationalSchool"
+    pub school_type: SchoolType,
     pub study_year: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub enum SchoolType {
+    BasicArtSchool,
+    BasicPracticalSchool,
+    BasicSchool,
+    BasicSpecialSchool,
+    BoardingHouse,
+    ChildrensHome,
+    Club,
+    Conservatory,
+    EconomicSection,
+    Gymnasium,
+    HigerProfessionalSchool,
+    Kindergarten,
+    OtherSchool,
+    OtherType,
+    PracticalSchool,
+    SchoolCanteen,
+    SchoolClub,
+    SchoolService,
+    SecondarySchool,
+    SecondaryVocationalSchool,
+    SportGymnasium,
+    SuperiorOrganization,
+    TechnicalSchool,
+    University,
+    Unknown,
+    VocationalSchool,
 }

@@ -1,6 +1,8 @@
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 
+use crate::UserType;
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct GdprCommissioners {
@@ -23,12 +25,12 @@ pub struct GdprCommissioner {
 #[serde(rename_all = "PascalCase")]
 pub struct GdprConsent {
     pub id: i64,
-    pub person_type: String, //UserType Enum "controller","parents","student","teacher"
+    pub person_type: UserType,
     pub person_id: String,
     pub created: DateTime<FixedOffset>,
-    pub validity: String, //enum "endOfStudy","endOfStudyPlusYears","toAppeal","unknown", "validity"
+    pub validity: GdprValidity,
     pub valid_from: DateTime<FixedOffset>,
-    pub state: String, //Enum   ConsentState "agreed", "cancelled", "disagreed", "expired", "newConsent", "revokeRequested", "revoked", "unknown"
+    pub state: GdprConsentState,
     pub title: Option<String>,
     pub personal_data: Option<String>,
     pub usage_purpose: Option<String>,
@@ -36,6 +38,29 @@ pub struct GdprConsent {
     pub valid_years: Option<i64>,
     pub rights: Option<GdprConsentRights>,
     pub body: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub enum GdprValidity {
+    EndOfStudy,
+    EndOfStudyPlusYears,
+    ToAppeal,
+    Unknown,
+    Validity,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub enum GdprConsentState {
+    Agreed,
+    Cancelled,
+    Disagreed,
+    Expired,
+    NewConsent,
+    RevokeRequested,
+    Revoked,
+    Unknown,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

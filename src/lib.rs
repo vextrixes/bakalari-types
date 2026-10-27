@@ -25,9 +25,12 @@ pub use api_info::ApiInfo;
 pub use attachment::AttachmentInfo;
 pub use error::{Error, ModelState, StringArray};
 pub use events::{Event, EventTime, EventType, Events};
-pub use gdpr::{GdprCommissioner, GdprCommissioners, GdprConsent, GdprConsentRights};
+pub use gdpr::{
+    GdprCommissioner, GdprCommissioners, GdprConsent, GdprConsentRights, GdprConsentState,
+    GdprValidity,
+};
 pub use homework::{HomeworkList, HomeworkListItem};
-pub use marks::{Mark, Marks, SubjectMarks};
+pub use marks::{Mark, MarkConfirmationStatus, Marks, SubjectMarks};
 pub use payments::*;
 pub use semester::{
     CertificateTerm, CertificateTerms, FinalMark, PedagogicalMeasure, PedagogicalMeasures,
@@ -38,7 +41,9 @@ pub use stdtype::{
     Teacher, TeacherSet, TimetableStudent,
 };
 pub use subjects::{Subject, Subjects};
-pub use substitutions::{ChangeLessonInfo, SubstitutionChange, Substitutions};
+pub use substitutions::{
+    ChangeDisplayType, ChangeLessonInfo, SubstitutionChange, SubstitutionChangeType, Substitutions,
+};
 pub use teaching::{Lesson, Teaching, TeachingTheme};
 pub use timetable::*;
-pub use user::{Module, UserInfo, UserInfoStudent};
+pub use user::{Module, UserInfo, UserInfoStudent, UserType, SchoolType};

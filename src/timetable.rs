@@ -22,15 +22,35 @@ pub struct Timetable {
 pub struct TimetableChange {
     pub day: DateTime<FixedOffset>,
     pub hours: String,
-    pub changetype: String, //enum  "Absence", "Added", "Canceled","NoChange", "Removed", "RoomChanged", "Substitution"
+    pub changetype: Changetype,
     pub description: String,
     pub time: String,
     pub change_subject: Option<StdType>,
     pub type_abbrev: Option<String>,
     pub type_name: Option<String>,
-    pub atom_type: Option<String>, // enum "Hour", "Pause", "TimeBlock"
+    pub atom_type: Option<AtomType>,
     pub start: Option<i64>,
     pub duration: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub enum Changetype {
+    Absence,
+    Added,
+    Canceled,
+    NoChange,
+    Removed,
+    RoomChanged,
+    Substitution,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub enum AtomType {
+    Hour,
+    Pause,
+    TimeBlock,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -84,9 +104,16 @@ pub struct Atom {
     pub notice: Option<String>,
     pub planned_clasification: Option<PlannedClasification>,
     pub week_theme: Option<String>,
-    pub lesson_release: String, //enum   LessonRelease: "NoChange", "Released"
+    pub lesson_release: LessonRelease,
     pub start: Option<i64>,
     pub duration: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub enum LessonRelease {
+    NoChange,
+    Released,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

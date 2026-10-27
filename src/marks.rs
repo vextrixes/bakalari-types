@@ -35,7 +35,7 @@ pub struct Mark {
     pub calculated_mark_text: String,
     pub max_points: i64,
     pub is_predictor_mark: bool,
-    pub mark_confirmation_state: String, // Option<MarkConfirmationStatus> enum "Confirmed", "DoesNotRequireConfirmation","Unconfirmed", "UnconfirmedAfterChange"
+    pub mark_confirmation_state: MarkConfirmationStatus,
     pub caption: Option<String>,
     pub theme: Option<String>,
     pub mark_text: Option<String>,
@@ -48,4 +48,13 @@ pub struct Mark {
     pub confirmed_when: Option<DateTime<FixedOffset>>,
     pub confirmed_by: Option<String>,
     pub verbal_evaluation: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub enum MarkConfirmationStatus {
+    Confirmed,
+    DoesNotRequireConfirmation,
+    Unconfirmed,
+    UnconfirmedAfterChange,
 }
