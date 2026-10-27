@@ -9,6 +9,7 @@ mod gdpr;
 mod homework; //TDOS
 //marking
 mod marks;
+mod modules;
 mod payments;
 mod semester;
 mod stdtype;
@@ -31,11 +32,11 @@ pub use gdpr::{
 };
 pub use homework::{HomeworkList, HomeworkListItem};
 pub use marks::{Mark, MarkConfirmationStatus, Marks, SubjectMarks};
+pub use modules::*;
 pub use payments::*;
 pub use semester::{
     CertificateTerm, CertificateTerms, FinalMark, PedagogicalMeasure, PedagogicalMeasures,
 };
-pub use stdtype::*;
 pub use stdtype::{
     Room, RoomSet, SchoolClass, SchoolClassSet, StdClassGroup, StdType, StdTypeNullable, Student,
     Teacher, TeacherSet, TimetableStudent,
@@ -46,4 +47,4 @@ pub use substitutions::{
 };
 pub use teaching::{Lesson, Teaching, TeachingTheme};
 pub use timetable::*;
-pub use user::{Module, UserInfo, UserInfoStudent, UserType, SchoolType};
+pub use user::{SchoolType, UserInfo, UserInfoStudent, UserType};

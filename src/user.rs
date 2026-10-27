@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 use serde_json::Value;
 use std::collections::HashMap;
 
-use crate::SchoolClass;
+use crate::{Module, SchoolClass};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
@@ -31,13 +31,6 @@ pub enum UserType {
     Parents,
     Student,
     Teacher,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct Module {
-    pub module: String, //Make an Enum "absence", "accesssystem", "application", "campaign", "classbook", "emergency", "events", "gdpr", "homeworks", "komens", "marking", "marks", "payments", "semester", "subjects", "substitutions", "teaching", "timetable", "unknown", "user_account", "web_based"
-    pub rights: Vec<String>, //Make enum "CanAccessEmergency",  "CanBeEmergencyParticipant",  "CanConfirmClassification",  "CanExcuseAbsence",  "CanManageEmergencies",  "CanOverseeEmergencyParticipants",  "ClassFundEnabled",  "ClassFundPaymentsEnabled",  "EditClassBook",  "EditMarks",  "PredictMarks",  "RegularPaymentsEnabled",  "SendAttachments",  "SendMessageAsDirector",  "SendMessages",  "ShowAbsence",  "ShowAbsencePercentage",  "ShowApologyMessages",  "ShowCampaign",  "ShowChildConsents",  "ShowClassBook",  "ShowClassFundDetails",  "ShowCommissioners",  "ShowEvents",  "ShowFinalMarks",  "ShowHomeworks",  "ShowManners",  "ShowMarking",  "ShowMarks",  "ShowNoticeBoardMessages",  "ShowOwnConsents",  "ShowRatingDetails",  "ShowRatingMessage",  "ShowReceivedMessages",  "ShowSentMessages",  "ShowSubjectThemes",  "ShowSubjects",  "ShowSubstitutions",  "ShowTimetable",  "Unknown"
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
