@@ -1,23 +1,36 @@
-use chrono::{DateTime, Utc};
+use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
+
+use crate::Subject;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct Substitutions {
-    pub from: DateTime<Utc>,
-    pub to: DateTime<Utc>,
+    pub from: DateTime<FixedOffset>,
+    pub to: DateTime<FixedOffset>,
     pub changes: Vec<SubstitutionChange>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct SubstitutionChange {
-    pub change_subject: Option<String>, //Unknown if string is the right type
-    pub day: DateTime<Utc>,
+    pub change_subject: Option<Subject>,
+    pub day: DateTime<FixedOffset>,
     pub hours: String,
-    pub change_type: String,
+    pub change_type: String, //enum   "Absence", "Added", "Canceled", "NoChange", "Removed", "RoomChanged", "Substitution"
     pub description: String,
     pub time: String,
-    pub type_abbrev: Option<String>, //Unknown if string is the right type,
-    pub type_name: Option<String>,   //Unknown if string is the right type
+    pub change_lesson_info: Option<ChangeLessonInfo>,
+    pub change_display_type: Option<String>, //enum "OriginalTeacher", "SubstituteTeacher"
+    pub atom_type: Option<String>,           //enum "Hour","Pause", "TimeBlock"
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub struct ChangeLessonInfo {
+    class_abbrev: Option<String>,
+    group_abbrev: Option<String>,
+    is_class_group: Option<bool>,
+    subject_abbrev: Option<String>,
+    room_abbrev: Option<String>,
 }

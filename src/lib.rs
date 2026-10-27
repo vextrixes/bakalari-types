@@ -1,42 +1,44 @@
 mod absence;
 mod api_info;
 mod attachment;
+//campaign
 mod error;
 mod events;
 mod gdpr;
-mod homework;
-mod lesson;
+//komens
+mod homework; //TDOS
+//marking
 mod marks;
-mod measures;
 mod payments;
+mod semester;
 mod stdtype;
 mod subjects;
 mod substitutions;
-mod themes;
+mod teaching;
 mod timetable;
-mod user;
-mod webmodules;
-mod what_if;
+mod user; //TODOS
+//webmodules
+//predictor
 
-pub use absence::{Absence, AbsenceListItem, SubjectAbsence};
+pub use absence::{AbsenceDay, StudentAbsenceOverviewResponse, SubjectAbsence};
 pub use api_info::ApiInfo;
-pub use attachment::Attachment;
-pub use error::Error;
-pub use events::{Event, Events, Time};
-pub use gdpr::{GDPRcommissioner, GDPRcommissioners};
-pub use homework::{Homework, HomeworkListItem};
-pub use lesson::{
-    AbsencesGroup, AbsentTypeOption, LessonAbsence, LessonHour, LessonLastTheme,
-    LessonStudentAbsence, LessonStudentInfo,
+pub use attachment::AttachmentInfo;
+pub use error::{Error, ModelState, StringArray};
+pub use events::{Event, EventTime, EventType, Events};
+pub use gdpr::{GdprCommissioner, GdprCommissioners, GdprConsent, GdprConsentRights};
+pub use homework::{HomeworkList, HomeworkListItem};
+pub use marks::{Mark, Marks, SubjectMarks};
+pub use payments::*;
+pub use semester::{
+    CertificateTerm, CertificateTerms, FinalMark, PedagogicalMeasure, PedagogicalMeasures,
 };
-pub use marks::{Mark, Marks, SubjectMarks, MarksFinal, CertificateTerm, FinalMark};
-pub use measures::{Measures, PedagogicalMeasure};
-pub use payments::{AddBalance, ClassfundPayments, ClassfundSummary, Payment, PaymentMonthlyData};
-pub use stdtype::{StdClassGroup, StdType};
+pub use stdtype::*;
+pub use stdtype::{
+    Room, RoomSet, SchoolClass, SchoolClassSet, StdClassGroup, StdType, StdTypeNullable, Student,
+    Teacher, TeacherSet, TimetableStudent,
+};
 pub use subjects::{Subject, Subjects};
-pub use substitutions::{SubstitutionChange, Substitutions};
-pub use themes::{Theme, Themes};
-pub use timetable::{Timetable, TimetableAtom, TimetableChange, TimetableDay, TimetableHour};
-pub use user::{Module, User};
-pub use webmodules::{Webmodule, Webmodules};
-pub use what_if::{WhatIfResult, WhatIfResultMark, WhatIfStartingEnvironmentMark};
+pub use substitutions::{ChangeLessonInfo, SubstitutionChange, Substitutions};
+pub use teaching::{Lesson, Teaching, TeachingTheme};
+pub use timetable::*;
+pub use user::{Module, UserInfo, UserInfoStudent};

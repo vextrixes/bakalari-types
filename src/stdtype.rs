@@ -16,68 +16,26 @@ pub struct StdTypeNullable {
     pub name: Option<String>,
 }
 
+pub type SchoolClass = StdType;
+
+pub type StdClassGroup = StdType;
+
+pub type SchoolClassSet = StdType;
+
+pub type Teacher = StdType;
+
+pub type TeacherSet = StdType;
+
+pub type Room = StdType;
+
+pub type RoomSet = StdType;
+
+pub type Student = StdType;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct SchoolClass {
+pub struct TimetableStudent {
     pub id: String,
-    pub abbrev: String,
-    pub name: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct StdClassGroup {
-    pub class_id: String,
-    pub id: String,
-    pub abbrev: String,
-    pub name: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct SchoolClassSet {
-    pub id: String,
-    pub abbrev: String,
-    pub name: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct Teacher {
-    pub id: String,
-    pub abbrev: String,
-    pub name: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct TeacherSet{
-    pub id: String,
-    pub abbrev: String,
-    pub name: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct Room{
-    pub id: String,
-    pub abbrev: String,
-    pub name: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct RoomSet{
-    pub id: String,
-    pub abbrev: String,
-    pub name: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct Student{
-    pub id: String,
-    pub abbrev: String,
+    pub abbrev: Option<String>,
     pub name: String,
 }

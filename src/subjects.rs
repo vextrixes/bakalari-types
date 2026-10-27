@@ -15,9 +15,9 @@ pub struct Subject {
     pub teacher_id: String,
     pub teacher_name: String,
     pub teacher_abbrev: String,
-    pub teacher_email: String,
-    pub teacher_web: String,
-    //    TeacherSchoolPhone:option<>,
-    //    TeacherHomePhone:option<>,
-    //    TeacherMobilePhone:option<>
+    pub teacher_email: Option<String>,
+    pub teacher_web: Option<String>,
+    pub teacher_school_phone: Option<String>,
+    pub teacher_home_phone: Option<String>,
+    pub teacher_mobile_phone: Option<String>,
 }

@@ -1,4 +1,4 @@
-use chrono::{DateTime, Utc};
+use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 
 use crate::StdType;
@@ -13,72 +13,39 @@ pub struct Marks {
 #[serde(rename_all = "PascalCase")]
 pub struct SubjectMarks {
     pub marks: Vec<Mark>,
-    pub subject: StdType,
-    pub average_text: String,
-    pub temporary_mark: String,
-    pub subject_note: String,
-    pub temporary_mark_note: String,
     pub points_only: bool,
     pub mark_prediction_enabled: bool,
+    pub subject: StdType,
+    pub average_text: Option<String>,
+    pub temporary_mark: Option<String>,
+    pub subject_note: Option<String>,
+    pub temporary_mark_note: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct Mark {
-    pub mark_date: DateTime<Utc>,
-    pub edit_date: DateTime<Utc>,
-    pub caption: String,
-    pub theme: String,
-    pub mark_text: String,
-    pub teacher_id: String,
-    pub r#type: String,
-    pub type_note: String,
-    pub weight: u8,
+    pub mark_date: DateTime<FixedOffset>,
+    pub edit_date: DateTime<FixedOffset>,
+    pub is_invalid_date: Option<bool>,
+    pub teacher_id: Option<String>,
     pub subject_id: String,
     pub is_new: bool,
     pub is_points: bool,
     pub calculated_mark_text: String,
-    //ClassRankText:null,
-    pub id: String,
-    pub points_text: String,
-    pub max_points: u16,
-    pub confirmed_when: Option<DateTime<Utc>>,
+    pub max_points: i64,
+    pub is_predictor_mark: bool,
+    pub mark_confirmation_state: String, // Option<MarkConfirmationStatus> enum "Confirmed", "DoesNotRequireConfirmation","Unconfirmed", "UnconfirmedAfterChange"
+    pub caption: Option<String>,
+    pub theme: Option<String>,
+    pub mark_text: Option<String>,
+    pub r#type: Option<String>,
+    pub type_note: Option<String>,
+    pub weight: Option<i64>,
+    pub class_rank_text: Option<String>,
+    pub id: Option<String>,
+    pub points_text: Option<String>,
+    pub confirmed_when: Option<DateTime<FixedOffset>>,
     pub confirmed_by: Option<String>,
-    pub mark_confirmation_state: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct MarksFinal {
-    pub certificate_terms: Vec<CertificateTerm>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct CertificateTerm {
-    pub final_marks: Vec<FinalMark>,
-    pub subjects: StdType,
-    pub grade_name: String,
-    pub grade: u8,
-    pub year_in_school: u8,
-    pub school_year: String,
-    pub semester: String,
-    pub semester_name: String,
-    pub repeated: bool,
-    pub closed: bool,
-    pub achievement_text: String,
-    pub marks_average: f64,
-    pub absent_hours: u16,
-    pub not_excused_hours: u16,
-    pub certificate_date: DateTime<Utc>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
-pub struct FinalMark {
-    pub mark_date: DateTime<Utc>,
-    pub edit_date: DateTime<Utc>,
-    pub mark_text: String,
-    pub subject_id: String,
-    pub id: String,
+    pub verbal_evaluation: Option<String>,
 }

@@ -12,12 +12,12 @@ pub struct ClassfundSummary {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundPaymentInfo {
-   instructions: Option<String>,
-   bank_account: Option<String>,
-   variable_symbol: Option<i64>,
-   specific_symbol: i64,
-   amount: f64,
-   message: Option<String>,
+    instructions: Option<String>,
+    bank_account: Option<String>,
+    variable_symbol: Option<i64>,
+    specific_symbol: i64,
+    amount: f64,
+    message: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -33,7 +33,7 @@ pub struct ClassFundRecord {
 pub struct ClassFundSummary {
     student_name_with_class: Option<String>,
     balance: f64,
-    spent: f64
+    spent: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -41,12 +41,12 @@ pub struct ClassFundSummary {
 pub struct ClassFundTeacherDocumentDetailStudent {
     full_name_with_class: Option<String>,
     amount: f64,
-    status: Option<String> //Option<PaymentsTeacherStudentStatus>, enum "Active" "Canceled"
+    status: Option<String>, //Option<PaymentsTeacherStudentStatus>, enum "Active" "Canceled"
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassFundTeacherDocumentDetail{
+pub struct ClassFundTeacherDocumentDetail {
     title: Option<String>,
     amount: f64,
     date: DateTime<FixedOffset>,
@@ -56,7 +56,7 @@ pub struct ClassFundTeacherDocumentDetail{
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassFundTeacherDocumentsItem{
+pub struct ClassFundTeacherDocumentsItem {
     id: i64,
     title: Option<String>,
     date: DateTime<FixedOffset>,
@@ -67,7 +67,7 @@ pub struct ClassFundTeacherDocumentsItem{
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassFundTeacherDocumentsMonthly{
+pub struct ClassFundTeacherDocumentsMonthly {
     date: DateTime<FixedOffset>,
     monthly_balance: f64,
     items: Vec<ClassFundTeacherDocumentsItem>,
@@ -75,29 +75,28 @@ pub struct ClassFundTeacherDocumentsMonthly{
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassFundTeacherStudentsItem{
+pub struct ClassFundTeacherStudentsItem {
     variable_symbol: i64,
     name: Option<String>,
     registration_number: Option<i64>,
     balance: f64,
-    status: String//PaymentsTeacherStudentStatus, enum "Active" "Canceled
+    status: String, //PaymentsTeacherStudentStatus, enum "Active" "Canceled
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassFundTeacherSummaryClass{
+pub struct ClassFundTeacherSummaryClass {
     abbrev: Option<String>,
     class_id: Option<String>,
     balance: f64,
     amount_to_pay: f64,
     debtors: i64,
     spent: f64,
-
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassFundTeacherSummary{
+pub struct ClassFundTeacherSummary {
     teacher_name: Option<String>,
     allowed_classes: Option<Vec<ClassFundTeacherSummaryClass>>,
 }
@@ -106,7 +105,7 @@ pub struct ClassFundTeacherSummary{
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct RegularPaymentDetail{
+pub struct RegularPaymentDetail {
     title: Option<String>,
     due_date: DateTime<FixedOffset>,
     amount: f64,
@@ -120,7 +119,7 @@ pub struct RegularPaymentDetail{
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct RegularPayment{
+pub struct RegularPayment {
     payment_id: i64,
     title: Option<String>,
     due_date: DateTime<FixedOffset>,
@@ -131,7 +130,7 @@ pub struct RegularPayment{
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct RegularPaymentsSummary{
+pub struct RegularPaymentsSummary {
     pub balance: f64,
     pub paid: f64,
     pub amount_scheduled: f64,

@@ -1,18 +1,18 @@
-use chrono::Utc;
+use chrono::FixedOffset;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct Absence {
+pub struct StudentAbsenceOverviewResponse {
     pub percentage_threshold: f64, //TODO: cutom type (u8)
-    pub absences: Vec<AbsenceListItem>,
-    pub absences_per_subject: Vec<SubjectAbsence>,
+    pub absences: Vec<AbsenceDay>,
+    pub absences_per_subject: Option<Vec<SubjectAbsence>>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct AbsenceListItem {
-    pub date: chrono::DateTime<Utc>,
+pub struct AbsenceDay {
+    pub date: chrono::DateTime<FixedOffset>,
     pub unsolved: u16,
     pub ok: u16,
     pub missed: u16,

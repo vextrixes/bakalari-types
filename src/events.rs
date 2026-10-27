@@ -1,5 +1,5 @@
-use crate::StdType;
-use chrono::{DateTime, Utc};
+use crate::{Room, RoomSet, SchoolClass, SchoolClassSet, StdType, Student, Teacher, TeacherSet};
+use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -14,23 +14,25 @@ pub struct Event {
     pub id: String,
     pub title: String,
     pub description: String,
-    pub times: Vec<Time>,
-    pub event_type: StdType,
-    pub classes: Vec<StdType>,
-    //class_sets: unknown
-    pub teachers: Vec<StdType>,
-    // teacher_sets: Vec<StdType>?
-    pub rooms: Vec<StdType>,
-    //room_sets: unknown
-    pub students: Vec<StdType>,
+    pub event_type: EventType,
+    pub times: Vec<EventTime>,
+    pub classes: Vec<SchoolClass>,
+    pub class_sets: Vec<SchoolClassSet>,
+    pub teachers: Vec<Teacher>,
+    pub teacher_sets: Vec<TeacherSet>,
+    pub rooms: Vec<Room>,
+    pub room_sets: Vec<RoomSet>,
+    pub students: Vec<Student>,
     pub note: Option<String>,
-    pub date_changed: DateTime<Utc>,
+    pub date_changed: DateTime<FixedOffset>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct Time {
+pub struct EventTime {
     pub whole_day: bool,
-    pub start_time: DateTime<Utc>,
-    pub end_time: DateTime<Utc>,
+    pub start_time: Option<DateTime<FixedOffset>>,
+    pub end_time: Option<DateTime<FixedOffset>>,
 }
+
+pub type EventType = StdType;
