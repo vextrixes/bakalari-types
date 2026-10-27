@@ -15,7 +15,7 @@
 - [x] teaching
 - [x] timetable
 - [ ] webmodules
-- [ ] user
+- [x] user
 
 # Features
 - [ ] OpenApi schema generation

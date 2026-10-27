@@ -8,9 +8,9 @@ pub struct UserInfo {
     #[serde(rename = "UserUID")]
     pub user_uid: String,
     pub campaign_category_code: String,
-    pub class: SchoolClass, //check nullable
+    pub class: Option<SchoolClass>,
     pub teacher_classes: Option<Vec<SchoolClass>>,
-    pub full_name: String, //check nullable
+    pub full_name: Option<String>,
     pub school_organization_name: Option<String>,
     pub school_type: Option<String>,
     pub user_type: UserType,
