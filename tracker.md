@@ -1,9 +1,11 @@
 # implementations
 
 - [ ] absence
-- [ ] campaign
+- [x] campaign
+- [ ] campaign error
 - [ ] class book
 - [x] events
+- [ ] error
 - [x] gdpr
 - [x] homeworks
 - [ ] komens

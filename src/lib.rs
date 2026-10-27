@@ -2,6 +2,7 @@ mod absence;
 mod api_info;
 mod attachment;
 //campaign
+mod campaign;
 mod error;
 mod events;
 mod gdpr;
@@ -23,6 +24,7 @@ mod user; //TODOS
 pub use absence::{AbsenceDay, StudentAbsenceOverviewResponse, SubjectAbsence};
 pub use api_info::ApiInfo;
 pub use attachment::AttachmentInfo;
+pub use campaign::Campaign;
 pub use error::{Error, ModelState, StringArray};
 pub use events::{Event, EventTime, EventType, Events};
 pub use gdpr::{

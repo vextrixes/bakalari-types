@@ -1,7 +1,7 @@
 mod modules;
 mod setting_modules;
-mod user;
+mod user_info;
 
 pub use modules::*;
 pub use setting_modules::*;
-pub use user::*;
+pub use user_info::*;
