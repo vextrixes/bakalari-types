@@ -1,8 +1,6 @@
 use serde::{Deserialize, Serialize};
-use serde_json::Value;
-use std::collections::HashMap;
 
-use crate::{Module, SchoolClass};
+use crate::{Module, SchoolClass, user::ModulesSetting};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
@@ -19,7 +17,7 @@ pub struct UserInfo {
     pub user_type_text: String,
     pub study_year: Option<i64>,
     pub enabled_modules: Vec<Module>,
-    pub setting_modules: HashMap<String, Value>, // TODO: Setting Module
+    pub setting_modules: ModulesSetting,
     pub full_user_name: Option<String>,
     pub students: Vec<UserInfoStudent>,
 }
