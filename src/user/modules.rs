@@ -3,47 +3,47 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(tag = "Module")]
 pub enum Module {
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Absence { rights: Vec<AbsenceRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     AccessSystem { rights: Vec<AccessSystemRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Application { rights: Vec<ApplicationRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Campaign { rights: Vec<CampaignRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Classbook { rights: Vec<ClassbookRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Emergency { rights: Vec<EmergencyRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Events { rights: Vec<EventsRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Gdpr { rights: Vec<GdprRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Homeworks { rights: Vec<HomeworksRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Komens { rights: Vec<KomensRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Marking { rights: Vec<MarkingRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Marks { rights: Vec<MarksRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Payments { rights: Vec<PaymentsRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Semester { rights: Vec<SemesterRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Subjects { rights: Vec<SubjectsRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Substitutions { rights: Vec<SubstitutionsRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Teaching { rights: Vec<TeachingRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Timetable { rights: Vec<TimetableRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     Unknown { rights: Vec<UnknownRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     UserAccount { rights: Vec<UserAccountRights> },
-    #[serde(rename_all="PascalCase")]
+    #[serde(rename_all = "PascalCase")]
     WebBased { rights: Vec<WebBasedRights> },
 }
 

@@ -5,6 +5,7 @@
 - [ ] campaign error
 - [ ] class book
 - [x] events
+- [x] auth
 - [ ] error
 - [x] gdpr
 - [x] homeworks
