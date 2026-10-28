@@ -12,7 +12,7 @@ pub struct UserInfo {
     pub teacher_classes: Option<Vec<SchoolClass>>,
     pub full_name: Option<String>,
     pub school_organization_name: Option<String>,
-    pub school_type: Option<String>,
+    pub school_type: Option<SchoolType>,
     pub user_type: UserType,
     pub user_type_text: String,
     pub study_year: Option<i64>,
@@ -35,7 +35,7 @@ pub enum UserType {
 #[serde(rename_all = "PascalCase")]
 pub struct UserInfoStudent {
     pub full_name: String,
-    pub class: Vec<SchoolClass>,
+    pub class: SchoolClass,
     pub school_type: SchoolType,
     pub study_year: Option<i64>,
 }

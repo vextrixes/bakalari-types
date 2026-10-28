@@ -15,6 +15,8 @@ pub struct ModulesSetting {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct CommonModuleSettings {
+    #[serde(rename = "$type")]
+    pub r#type: ModulesSettingType,
     pub actual_semester: ActualSemester,
     pub actual_school_year: Option<ActualSchoolYear>,
 }
@@ -39,6 +41,8 @@ pub struct ActualSchoolYear {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct KomensModuleSettings {
+    #[serde(rename = "$type")]
+    pub r#type: ModulesSettingType,
     pub upload_folder_verified: bool,
     pub current_school_year_start_date: DateTime<FixedOffset>,
 }
@@ -46,6 +50,8 @@ pub struct KomensModuleSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct MarkinModuleSettings {
+    #[serde(rename = "$type")]
+    pub r#type: ModulesSettingType,
     pub required_classification_confirmation: bool,
     pub classification_confirmation_classes_list: Vec<String>,
     pub classification_confirmation_notification: bool,
@@ -55,6 +61,8 @@ pub struct MarkinModuleSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct TimetableModuleSettings {
+    #[serde(rename = "$type")]
+    pub r#type: ModulesSettingType,
     pub display_type: TimetableDisplayType,
     pub header_type: TimetableHeaderType,
     pub days_definition: Vec<TimetableSettingsDayDefinition>,
@@ -96,6 +104,8 @@ pub struct TimetableSettingsHourDefinition {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassbookModuleSettings {
+    #[serde(rename = "$type")]
+    pub r#type: ModulesSettingType,
     pub absence_calculation_type: AbsenceCalculationType,
     pub absence_calculation_period: ActualSemester,
 }
@@ -110,7 +120,21 @@ pub enum AbsenceCalculationType {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct EmergencyModuleSettings {
+    #[serde(rename = "$type")]
+    pub r#type: ModulesSettingType,
     pub firestore_db_name: String,
     pub emergency_server_url: String,
     pub is_sms_licensed: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub enum ModulesSettingType {
+    KomensModuleSettings,
+    MarksModuleSettings,
+    TimetableModuleSettings,
+    HomeworksModuleSettings,
+    ClassBookModuleSettings,
+    CommonModuleSettings,
+    EmergencyModuleSettings,
 }
