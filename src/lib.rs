@@ -4,11 +4,12 @@ mod attachment;
 //campaign
 mod auth;
 mod campaign;
+mod endpoints;
 mod error;
 mod events;
 mod gdpr;
 //komens
-mod homework; //TDOS
+mod homeworks; //TDOS
 //marking
 mod marks;
 mod payments;
@@ -27,14 +28,15 @@ pub use api_info::ApiInfo;
 pub use attachment::AttachmentInfo;
 pub use auth::*;
 pub use campaign::Campaign;
+pub use endpoints::*;
 pub use error::{Error, ModelState, StringArray};
 pub use events::{Event, EventTime, EventType, Events};
 pub use gdpr::{
     GdprCommissioner, GdprCommissioners, GdprConsent, GdprConsentRights, GdprConsentState,
     GdprValidity,
 };
-pub use homework::{HomeworkList, HomeworkListItem};
-pub use marks::{Mark, MarkConfirmationStatus, Marks, SubjectMarks};
+pub use homeworks::*;
+pub use marks::*;
 pub use payments::*;
 pub use semester::{
     CertificateTerm, CertificateTerms, FinalMark, PedagogicalMeasure, PedagogicalMeasures,
@@ -43,7 +45,7 @@ pub use stdtype::{
     Room, RoomSet, SchoolClass, SchoolClassSet, StdClassGroup, StdType, StdTypeNullable, Student,
     Teacher, TeacherSet, TimetableStudent,
 };
-pub use subjects::{Subject, Subjects};
+pub use subjects::*;
 pub use substitutions::{
     ChangeDisplayType, ChangeLessonInfo, SubstitutionChange, SubstitutionChangeType, Substitutions,
 };

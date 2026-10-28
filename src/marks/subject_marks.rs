@@ -27,7 +27,7 @@ pub struct SubjectMarks {
 pub struct Mark {
     pub mark_date: DateTime<FixedOffset>,
     pub edit_date: DateTime<FixedOffset>,
-    pub is_invalid_date: Option<bool>,
+    pub is_invalid_date: bool,
     pub teacher_id: Option<String>,
     pub subject_id: String,
     pub is_new: bool,

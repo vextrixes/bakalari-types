@@ -17,6 +17,15 @@ pub struct LoginSuccess {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "snake_case")]
+pub struct LoginRequest {
+    client_id: String,
+    grant_type: String,
+    username: String,
+    password: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "snake_case")]
 pub enum TokenType {
     Bearer,
 }

@@ -25,3 +25,103 @@
 - [ ] documentation
 - [ ] tests
 - [ ] constructors
+
+# Endpoints
+- [ ] /api/3/komens/message/:messageId/mark-as-read
+- [x] /api/3/marks
+- [x] /api/3/homeworks/:id/student-done/:finished
+- [ ] /api/3/marking/atoms/:atomId/headers
+- [ ] /api/3/payments/classfund/teacher/students/:classId
+- [ ] /api/3/classbook/lessonTags
+- [ ] /api/3/komens/messages/rating/:messageId
+- [ ] /api/3/absence/student
+- [ ] /api/3/webmodule
+- [ ] /api/3/timetable/actual
+- [ ] /api/3/payments/classfund/teacher/document/detail/:documentId
+- [ ] /api/3
+- [ ] /api/3/komens/attachment/:id
+- [ ] /api/3/subjects/themes/:subjectId
+- [ ] /api/3/payments/classfund
+- [ ] /api/3/gdpr/consents/person/child
+- [ ] /api/3/komens/concept/:conceptId
+- [ ] /api/3/marks/measures
+- [ ] /api/3/unregister-user-notification
+- [ ] /api/3/gdpr/consent/:id/agree
+- [x] /api/3/marks/count-new
+- [ ] /api/3/komens/concept
+- [ ] /api/3/timetable/permanent
+- [ ] /api/3/komens/messages/noticeboard
+- [ ] /api/3/komens/messages/apology/:messageId
+- [ ] /api/3/komens/messages/received/:messageId
+- [x] /api/3/user
+- [ ] /api/3/payments/regularpayments/detail/:paymentId
+- [ ] /api/3/substitutions
+- [ ] /api/3/marks/what-if
+- [ ] /api/3/gdpr/commissioner/send-objection
+- [ ] /api/3/gdpr/consents/person/new
+- [ ] /api/3/lesson/:lessonId/absence
+- [ ] /api/3/payments/regularpayments/summary
+- [ ] /api/3/emergency/startemergency
+- [ ] /api/3/timetable/permanent/class/:classId
+- [ ] /api/3/gdpr/commissioner/send-report
+- [ ] /api/3/komens/message/:messageId/mark-as-unhidden
+- [ ] /api/3/lesson/:lessonId/studentsTimetable
+- [ ] /api/3/marks/final
+- [ ] /api/3/timetable/student/:studentId
+- [ ] /api/3/marking/atom/:atomId/headerOptions
+- [ ] /api/3/gdpr/consent/:id/disagree
+- [ ] /api/3/komens/messages/sent
+- [ ] /api/3/emergency/configuration
+- [ ] /api/3/komens/message
+- [ ] /api/3/komens/message/:messageId/mark-as-hidden
+- [ ] /api/3/lesson/:lessonId/past
+- [ ] /api/3/komens/attachment
+- [ ] /api/3/komens/messages/received
+- [ ] /api/3/login/:token
+- [ ] /api/3/komens/concepts
+- [ ] /api/3/komens/messages/received/unread
+- [ ] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId
+- [ ] /api/3/timetable/actual/class/:classId
+- [ ] /api/3/gdpr/consents/person
+- [ ] /api/3/komens/messages/unread
+- [ ] /api/3/absence
+- [ ] /api/3/komens/message/:messageId/mark-as-confirmed
+- [ ] /api/3/komens/messages/apology
+- [ ] /api/3/events
+- [ ] /api/3/komens/concepts/count
+- [ ] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId/students
+- [ ] /api/3/payments/regularpayments
+- [ ] /api/3/komens/messages/noticeboard/:messageId&
+- [ ] /api/3/komens/message-types/reply/:messageId
+- [ ] /api/3/payments/regularpayments/teacher/prescriptions
+- [x] /api/3/marks/SetClassificationConfirmation
+- [x] /api/3/homeworks/count-actual
+- [ ] /api/3/gdpr/consent/:id/revoke-request
+- [ ] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId/students/:studentId
+- [ ] /api/3/marking/atoms
+- [ ] /api/3/absence/canexcuse/:studentId
+- [ ] /api/3/komens/rating-templates
+- [ ] /api/3/emergency/participantsselection
+- [ ] /api/3/komens/messages/noticeboard/unread
+- [ ] /api/3/komens/message-types
+- [ ] /api/3/events/my
+- [ ] /api/3/gdpr/commissioners
+- [ ] /api/3/classbook/:recordId
+- [ ] /api/3/marking/marks/:atomId
+- [ ] /api/3/substitutions/cycles
+- [x] /api/3/logintoken
+- [ ] /api/3/komens/message-types/edit/:messageId
+- [ ] /api/3/payments/classfund/teacher/documents/:classId
+- [ ] /api/3/payments/classfund/summary
+- [ ] /api/3/register-notification
+- [ ] /api/3/payments/classfund/paymentsinfo
+- [ ] /api/3/komens/messages/rating
+- [ ] /api/3/komens/message/:messageId
+- [x] /api/3/homeworks
+- [x] /api/3/subjects
+- [ ] /api/3/classbook
+- [x] /api/3/user/student-at-school
+- [ ] /api/3/payments/classfund/teacher/summary
+- [ ] /api/3/komens/messages/sent/:messageId
+- [x] /api/login
+- [x] /.well-known/openid-configuration
