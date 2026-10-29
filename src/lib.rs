@@ -9,7 +9,7 @@ mod error;
 mod events;
 mod gdpr;
 //komens
-mod homeworks; //TDOS
+mod homework; //TDOS
 //marking
 mod marks;
 mod payments;
@@ -23,19 +23,19 @@ mod user; //TODOS
 //webmodules
 //predictor
 
-pub use absence::{AbsenceDay, StudentAbsenceOverviewResponse, SubjectAbsence};
+pub use absence::*;
 pub use api_info::ApiInfo;
 pub use attachment::AttachmentInfo;
 pub use auth::*;
 pub use campaign::Campaign;
 pub use endpoints::*;
 pub use error::{Error, ModelState, StringArray};
-pub use events::{Event, EventTime, EventType, Events};
+pub use events::*;
 pub use gdpr::{
     GdprCommissioner, GdprCommissioners, GdprConsent, GdprConsentRights, GdprConsentState,
     GdprValidity,
 };
-pub use homeworks::*;
+pub use homework::*;
 pub use marks::*;
 pub use payments::*;
 pub use semester::{

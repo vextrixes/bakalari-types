@@ -33,3 +33,11 @@ pub struct SubjectAbsence {
     pub school: u16,
     pub distance_teaching: u16,
 }
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub struct SubjectAbsenceOverviewResponse {
+    pub percentage_threshold: f64,
+    pub absences: Option<Vec<AbsenceDay>>,
+    pub absences_per_subject: Option<Vec<SubjectAbsence>>,
+}

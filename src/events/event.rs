@@ -2,8 +2,6 @@ use crate::{Room, RoomSet, SchoolClass, SchoolClassSet, StdType, Student, Teache
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 
-/// /api/3/events GET body response
-/// Get /api/3/events/my GET body response
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct Events {

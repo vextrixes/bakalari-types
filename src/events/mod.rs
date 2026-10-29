@@ -1,5 +1,5 @@
 mod endpoints;
-mod homework;
+mod event;
 
 pub use endpoints::*;
-pub use homework::*;
+pub use event::*;
