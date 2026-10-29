@@ -12,93 +12,101 @@ pub struct ClassfundSummary {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundPaymentInfo {
-    instructions: Option<String>,
-    bank_account: Option<String>,
-    variable_symbol: Option<i64>,
-    specific_symbol: i64,
-    amount: f64,
-    message: Option<String>,
+    pub instructions: Option<String>,
+    pub bank_account: Option<String>,
+    pub variable_symbol: Option<i64>,
+    pub specific_symbol: i64,
+    pub amount: f64,
+    pub message: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub struct ClassFundMonthly {
+    pub date: DateTime<FixedOffset>,
+    pub monthly_balance: f64,
+    pub items: Vec<ClassFundRecord>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundRecord {
-    description: Option<String>,
-    date: DateTime<FixedOffset>,
-    amount: f64,
+    pub description: Option<String>,
+    pub date: DateTime<FixedOffset>,
+    pub amount: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundSummary {
-    student_name_with_class: Option<String>,
-    balance: f64,
-    spent: f64,
+    pub student_name_with_class: Option<String>,
+    pub balance: f64,
+    pub spent: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundTeacherDocumentDetailStudent {
-    full_name_with_class: Option<String>,
-    amount: f64,
-    status: Option<String>, //Option<PaymentsTeacherStudentStatus>, enum "Active" "Canceled"
+    pub full_name_with_class: Option<String>,
+    pub amount: f64,
+    pub status: Option<PaymentsTeacherStudentStatus>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundTeacherDocumentDetail {
-    title: Option<String>,
-    amount: f64,
-    date: DateTime<FixedOffset>,
-    student_count: i64,
-    students: Option<Vec<ClassFundTeacherDocumentDetailStudent>>,
+    pub title: Option<String>,
+    pub amount: f64,
+    pub date: DateTime<FixedOffset>,
+    pub student_count: i64,
+    pub students: Option<Vec<ClassFundTeacherDocumentDetailStudent>>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundTeacherDocumentsItem {
-    id: i64,
-    title: Option<String>,
-    date: DateTime<FixedOffset>,
-    total_amount: f64,
-    amount_per_student: f64,
-    student_count: i64,
+    pub id: i64,
+    pub title: Option<String>,
+    pub date: DateTime<FixedOffset>,
+    pub total_amount: f64,
+    pub amount_per_student: f64,
+    pub student_count: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundTeacherDocumentsMonthly {
-    date: DateTime<FixedOffset>,
-    monthly_balance: f64,
-    items: Vec<ClassFundTeacherDocumentsItem>,
+    pub date: DateTime<FixedOffset>,
+    pub monthly_balance: f64,
+    pub items: Vec<ClassFundTeacherDocumentsItem>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundTeacherStudentsItem {
-    variable_symbol: i64,
-    name: Option<String>,
-    registration_number: Option<i64>,
-    balance: f64,
-    status: String, //PaymentsTeacherStudentStatus, enum "Active" "Canceled
+    pub variable_symbol: i64,
+    pub name: Option<String>,
+    pub registration_number: Option<i64>,
+    pub balance: f64,
+    pub status: PaymentsTeacherStudentStatus,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundTeacherSummaryClass {
-    abbrev: Option<String>,
-    class_id: Option<String>,
-    balance: f64,
-    amount_to_pay: f64,
-    debtors: i64,
-    spent: f64,
+    pub abbrev: Option<String>,
+    pub class_id: Option<String>,
+    pub balance: f64,
+    pub amount_to_pay: f64,
+    pub debtors: i64,
+    pub spent: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ClassFundTeacherSummary {
-    teacher_name: Option<String>,
-    allowed_classes: Option<Vec<ClassFundTeacherSummaryClass>>,
+    pub teacher_name: Option<String>,
+    pub allowed_classes: Option<Vec<ClassFundTeacherSummaryClass>>,
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -106,26 +114,26 @@ pub struct ClassFundTeacherSummary {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct RegularPaymentDetail {
-    title: Option<String>,
-    due_date: DateTime<FixedOffset>,
-    amount: f64,
-    original_amount: f64,
-    status: String, //r16 = <RegularPaymentStatus>  "BeforeDueDate", "NotPaid", "Paid", "PartiallyPaid"
-    bank_account: Option<String>,
-    variable_symbol: Option<i64>,
-    specific_symbol: Option<i64>,
-    message: Option<String>,
+    pub title: Option<String>,
+    pub due_date: DateTime<FixedOffset>,
+    pub amount: f64,
+    pub original_amount: f64,
+    pub status: RegularPaymentStatus,
+    pub bank_account: Option<String>,
+    pub variable_symbol: Option<i64>,
+    pub specific_symbol: Option<i64>,
+    pub message: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct RegularPayment {
-    payment_id: i64,
-    title: Option<String>,
-    due_date: DateTime<FixedOffset>,
-    amount: f64,
-    status: String, //r16 = <RegularPaymentStatus>  "BeforeDueDate", "NotPaid", "Paid", "PartiallyPaid"
-    original_amount: f64,
+    pub payment_id: i64,
+    pub title: Option<String>,
+    pub due_date: DateTime<FixedOffset>,
+    pub amount: f64,
+    pub status: RegularPaymentStatus,
+    pub original_amount: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -154,7 +162,7 @@ pub struct RegularPrescriptionDetail {
     pub payment_type_id: i64,
     pub payment_type_name: Option<String>,
     pub amount: f64,
-    pub state: String, //r16 = <RegularPrescriptionState>  "Paid", "PaidNotActive","unknown","Unpaid", "UnpaidNotActive"
+    pub state: RegularPrescription,
     pub due_date_max: DateTime<FixedOffset>,
     pub bank_account: Option<String>,
     pub specific_symbol: Option<i64>,
@@ -187,7 +195,7 @@ pub struct RegularPrescriptionStudentDetail {
     pub title: Option<String>,
     pub balance: f64,
     pub total_regulation_amount: f64,
-    pub status: String, //PaymentsTeacherStudentStatus, enum "Active" "Canceled"
+    pub status: PaymentsTeacherStudentStatus,
     pub document_lines: Option<Vec<RegularPrescriptionDocumentLine>>,
     pub regulation_lines: Option<Vec<RegularPrescriptionRegulationLine>>,
 }
@@ -200,7 +208,7 @@ pub struct RegularPrescriptionStudent {
     pub first_name: Option<String>,
     pub full_name: Option<String>,
     pub balance: f64,
-    pub status: String, //PaymentsTeacherStudentStatus, enum "Active" "Canceled"
+    pub status: PaymentsTeacherStudentStatus,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -211,7 +219,34 @@ pub struct RegularPrescription {
     pub payment_type_id: i64,
     pub payment_type_name: Option<String>,
     pub amount: f64,
-    pub state: String, //PaymentsTeacherStudentStatus, enum "Active" "Canceled"
+    pub state: PaymentsTeacherStudentStatus,
     pub due_date_max: Option<DateTime<FixedOffset>>,
     pub students_count: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub enum PaymentsTeacherStudentStatus {
+    Active,
+    Canceled,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub enum RegularPaymentStatus {
+    BeforeDueDate,
+    NotPaid,
+    Paid,
+    PartiallyPaid,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub enum RegularPrescriptionState {
+    Paid,
+    PaidNotActive,
+    #[serde(rename = "unknown")]
+    Unknown,
+    Unpaid,
+    UnpaidNotActive,
 }
