@@ -40,7 +40,7 @@
 - [ ] /api/3/payments/classfund/teacher/document/detail/:documentId
 - [ ] /api/3
 - [ ] /api/3/komens/attachment/:id
-- [ ] /api/3/subjects/themes/:subjectId
+- [x] /api/3/subjects/themes/:subjectId
 - [ ] /api/3/payments/classfund
 - [ ] /api/3/gdpr/consents/person/child
 - [ ] /api/3/komens/concept/:conceptId
@@ -87,7 +87,7 @@
 - [ ] /api/3/absence
 - [ ] /api/3/komens/message/:messageId/mark-as-confirmed
 - [ ] /api/3/komens/messages/apology
-- [ ] /api/3/events
+- [x] /api/3/events
 - [ ] /api/3/komens/concepts/count
 - [ ] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId/students
 - [ ] /api/3/payments/regularpayments
@@ -104,7 +104,7 @@
 - [ ] /api/3/emergency/participantsselection
 - [ ] /api/3/komens/messages/noticeboard/unread
 - [ ] /api/3/komens/message-types
-- [ ] /api/3/events/my
+- [x] /api/3/events/my
 - [ ] /api/3/gdpr/commissioners
 - [ ] /api/3/classbook/:recordId
 - [ ] /api/3/marking/marks/:atomId

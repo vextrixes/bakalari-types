@@ -49,6 +49,6 @@ pub use subjects::*;
 pub use substitutions::{
     ChangeDisplayType, ChangeLessonInfo, SubstitutionChange, SubstitutionChangeType, Substitutions,
 };
-pub use teaching::{Lesson, Teaching, TeachingTheme};
+pub use teaching::*;
 pub use timetable::*;
 pub use user::*;
