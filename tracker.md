@@ -55,7 +55,7 @@
 - [ ] /api/3/komens/messages/received/:messageId
 - [x] /api/3/user
 - [ ] /api/3/payments/regularpayments/detail/:paymentId
-- [ ] /api/3/substitutions
+- [x] /api/3/substitutions
 - [ ] /api/3/marks/what-if
 - [ ] /api/3/gdpr/commissioner/send-objection
 - [ ] /api/3/gdpr/consents/person/new
@@ -108,7 +108,7 @@
 - [ ] /api/3/gdpr/commissioners
 - [ ] /api/3/classbook/:recordId
 - [ ] /api/3/marking/marks/:atomId
-- [ ] /api/3/substitutions/cycles
+- [x] /api/3/substitutions/cycles
 - [x] /api/3/logintoken
 - [ ] /api/3/komens/message-types/edit/:messageId
 - [ ] /api/3/payments/classfund/teacher/documents/:classId

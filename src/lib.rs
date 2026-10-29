@@ -1,6 +1,6 @@
 mod absence;
-mod api_info;
 mod attachment;
+mod others;
 //campaign
 mod auth;
 mod campaign;
@@ -24,7 +24,6 @@ mod user; //TODOS
 //predictor
 
 pub use absence::*;
-pub use api_info::ApiInfo;
 pub use attachment::AttachmentInfo;
 pub use auth::*;
 pub use campaign::Campaign;
@@ -37,6 +36,7 @@ pub use gdpr::{
 };
 pub use homework::*;
 pub use marks::*;
+pub use others::*;
 pub use payments::*;
 pub use semester::{
     CertificateTerm, CertificateTerms, FinalMark, PedagogicalMeasure, PedagogicalMeasures,
@@ -46,9 +46,7 @@ pub use stdtype::{
     Teacher, TeacherSet, TimetableStudent,
 };
 pub use subjects::*;
-pub use substitutions::{
-    ChangeDisplayType, ChangeLessonInfo, SubstitutionChange, SubstitutionChangeType, Substitutions,
-};
+pub use substitutions::*;
 pub use teaching::*;
 pub use timetable::*;
 pub use user::*;
