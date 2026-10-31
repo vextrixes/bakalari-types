@@ -1,5 +1,5 @@
-mod semester;
 mod endpoints;
+mod semester;
 
-pub use semester::*;
 pub use endpoints::*;
+pub use semester::*;
