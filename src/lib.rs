@@ -17,7 +17,7 @@ mod subjects;
 mod substitutions;
 mod teaching;
 mod timetable;
-mod user; //TODOS
+mod user;
 //webmodules
 //predictor
 
