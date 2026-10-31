@@ -28,7 +28,7 @@ pub const GET_STUDENT_TIMETABLE_WITH_ABSENCES_ENDPOINT: Endpoint<
 };
 
 pub const EXCUSE_KOMENS_ABSENCE_ENDPOINT: Endpoint<ExcuseAbsenceResponse, ()> = Endpoint::Put {
-    //TODO unknown behaviour (and request type) // probably bsenceRecord or AbsenceRecordWithSubject
+    //TODO unknown behaviour (and request type) // probably absenceRecord or AbsenceRecordWithSubject
     url: "/api/3/absence",
     auth: true,
     content_type: ContentType::Json,
