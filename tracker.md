@@ -42,11 +42,11 @@
 - [ ] /api/3/komens/attachment/:id
 - [x] /api/3/subjects/themes/:subjectId
 - [x] /api/3/payments/classfund
-- [ ] /api/3/gdpr/consents/person/child
+- [x] /api/3/gdpr/consents/person/child
 - [ ] /api/3/komens/concept/:conceptId
 - [x] /api/3/marks/measures
 - [ ] /api/3/unregister-user-notification
-- [ ] /api/3/gdpr/consent/:id/agree
+- [x] /api/3/gdpr/consent/:id/agree
 - [x] /api/3/marks/count-new
 - [ ] /api/3/komens/concept
 - [ ] /api/3/timetable/permanent
@@ -57,19 +57,19 @@
 - [x] /api/3/payments/regularpayments/detail/:paymentId
 - [x] /api/3/substitutions
 - [ ] /api/3/marks/what-if
-- [ ] /api/3/gdpr/commissioner/send-objection
-- [ ] /api/3/gdpr/consents/person/new
+- [x] /api/3/gdpr/commissioner/send-objection
+- [x] /api/3/gdpr/consents/person/new
 - [ ] /api/3/lesson/:lessonId/absence
 - [x] /api/3/payments/regularpayments/summary
 - [ ] /api/3/emergency/startemergency
 - [ ] /api/3/timetable/permanent/class/:classId
-- [ ] /api/3/gdpr/commissioner/send-report
+- [x] /api/3/gdpr/commissioner/send-report
 - [ ] /api/3/komens/message/:messageId/mark-as-unhidden
 - [ ] /api/3/lesson/:lessonId/studentsTimetable
 - [x] /api/3/marks/final
 - [x] /api/3/timetable/student/:studentId
 - [ ] /api/3/marking/atom/:atomId/headerOptions
-- [ ] /api/3/gdpr/consent/:id/disagree
+- [x] /api/3/gdpr/consent/:id/disagree
 - [ ] /api/3/komens/messages/sent
 - [ ] /api/3/emergency/configuration
 - [ ] /api/3/komens/message
@@ -96,7 +96,7 @@
 - [x] /api/3/payments/regularpayments/teacher/prescriptions
 - [x] /api/3/marks/SetClassificationConfirmation
 - [x] /api/3/homeworks/count-actual
-- [ ] /api/3/gdpr/consent/:id/revoke-request
+- [x] /api/3/gdpr/consent/:id/revoke-request
 - [x] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId/students/:studentId
 - [ ] /api/3/marking/atoms
 - [x] /api/3/absence/canexcuse/:studentId
