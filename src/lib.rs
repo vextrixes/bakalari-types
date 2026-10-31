@@ -3,7 +3,6 @@ mod others;
 //campaign
 mod auth;
 mod endpoints;
-mod error;
 mod events;
 mod gdpr;
 //komens
@@ -24,7 +23,6 @@ mod user;
 pub use absence::*;
 pub use auth::*;
 pub use endpoints::*;
-pub use error::{Error, ModelState, StringArray};
 pub use events::*;
 pub use gdpr::*;
 pub use homework::*;
@@ -32,10 +30,7 @@ pub use marks::*;
 pub use others::*;
 pub use payments::*;
 pub use semester::*;
-pub use stdtype::{
-    Room, RoomSet, SchoolClass, SchoolClassSet, StdClassGroup, StdType, StdTypeNullable, Student,
-    Teacher, TeacherSet, TimetableStudent,
-};
+pub use stdtype::*;
 pub use subjects::*;
 pub use substitutions::*;
 pub use teaching::*;
