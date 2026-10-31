@@ -12,6 +12,12 @@ pub enum Endpoint<Response, Request> {
         content_type: ContentType,
         _types: PhantomData<fn() -> (Response, Request)>,
     },
+    Put {
+        url: &'static str,
+        auth: bool,
+        content_type: ContentType,
+        _types: PhantomData<fn() -> (Response, Request)>,
+    },
 }
 
 pub enum ContentType {

@@ -34,7 +34,7 @@
 - [x] /api/3/payments/classfund/teacher/students/:classId
 - [ ] /api/3/classbook/lessonTags
 - [ ] /api/3/komens/messages/rating/:messageId
-- [ ] /api/3/absence/student
+- [x] /api/3/absence/student
 - [ ] /api/3/webmodule
 - [ ] /api/3/timetable/actual
 - [x] /api/3/payments/classfund/teacher/document/detail/:documentId
@@ -67,7 +67,7 @@
 - [ ] /api/3/komens/message/:messageId/mark-as-unhidden
 - [ ] /api/3/lesson/:lessonId/studentsTimetable
 - [ ] /api/3/marks/final
-- [ ] /api/3/timetable/student/:studentId
+- [x] /api/3/timetable/student/:studentId
 - [ ] /api/3/marking/atom/:atomId/headerOptions
 - [ ] /api/3/gdpr/consent/:id/disagree
 - [ ] /api/3/komens/messages/sent
@@ -84,7 +84,7 @@
 - [ ] /api/3/timetable/actual/class/:classId
 - [ ] /api/3/gdpr/consents/person
 - [ ] /api/3/komens/messages/unread
-- [ ] /api/3/absence
+- [x] /api/3/absence
 - [ ] /api/3/komens/message/:messageId/mark-as-confirmed
 - [ ] /api/3/komens/messages/apology
 - [x] /api/3/events
@@ -99,7 +99,7 @@
 - [ ] /api/3/gdpr/consent/:id/revoke-request
 - [x] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId/students/:studentId
 - [ ] /api/3/marking/atoms
-- [ ] /api/3/absence/canexcuse/:studentId
+- [x] /api/3/absence/canexcuse/:studentId
 - [ ] /api/3/komens/rating-templates
 - [ ] /api/3/emergency/participantsselection
 - [ ] /api/3/komens/messages/noticeboard/unread
