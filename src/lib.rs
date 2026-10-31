@@ -38,9 +38,7 @@ pub use homework::*;
 pub use marks::*;
 pub use others::*;
 pub use payments::*;
-pub use semester::{
-    CertificateTerm, CertificateTerms, FinalMark, PedagogicalMeasure, PedagogicalMeasures,
-};
+pub use semester::*;
 pub use stdtype::{
     Room, RoomSet, SchoolClass, SchoolClassSet, StdClassGroup, StdType, StdTypeNullable, Student,
     Teacher, TeacherSet, TimetableStudent,

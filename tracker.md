@@ -44,7 +44,7 @@
 - [x] /api/3/payments/classfund
 - [ ] /api/3/gdpr/consents/person/child
 - [ ] /api/3/komens/concept/:conceptId
-- [ ] /api/3/marks/measures
+- [x] /api/3/marks/measures
 - [ ] /api/3/unregister-user-notification
 - [ ] /api/3/gdpr/consent/:id/agree
 - [x] /api/3/marks/count-new
@@ -66,7 +66,7 @@
 - [ ] /api/3/gdpr/commissioner/send-report
 - [ ] /api/3/komens/message/:messageId/mark-as-unhidden
 - [ ] /api/3/lesson/:lessonId/studentsTimetable
-- [ ] /api/3/marks/final
+- [x] /api/3/marks/final
 - [x] /api/3/timetable/student/:studentId
 - [ ] /api/3/marking/atom/:atomId/headerOptions
 - [ ] /api/3/gdpr/consent/:id/disagree
