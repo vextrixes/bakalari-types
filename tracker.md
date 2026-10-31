@@ -36,9 +36,9 @@
 - [ ] /api/3/komens/messages/rating/:messageId
 - [x] /api/3/absence/student
 - [ ] /api/3/webmodule
-- [ ] /api/3/timetable/actual
+- [x] /api/3/timetable/actual
 - [x] /api/3/payments/classfund/teacher/document/detail/:documentId
-- [ ] /api/3
+- [x] /api/3
 - [ ] /api/3/komens/attachment/:id
 - [x] /api/3/subjects/themes/:subjectId
 - [x] /api/3/payments/classfund
@@ -49,7 +49,7 @@
 - [x] /api/3/gdpr/consent/:id/agree
 - [x] /api/3/marks/count-new
 - [ ] /api/3/komens/concept
-- [ ] /api/3/timetable/permanent
+- [x] /api/3/timetable/permanent
 - [ ] /api/3/komens/messages/noticeboard
 - [ ] /api/3/komens/messages/apology/:messageId
 - [ ] /api/3/komens/messages/received/:messageId
@@ -62,7 +62,7 @@
 - [ ] /api/3/lesson/:lessonId/absence
 - [x] /api/3/payments/regularpayments/summary
 - [ ] /api/3/emergency/startemergency
-- [ ] /api/3/timetable/permanent/class/:classId
+- [x] /api/3/timetable/permanent/class/:classId
 - [x] /api/3/gdpr/commissioner/send-report
 - [ ] /api/3/komens/message/:messageId/mark-as-unhidden
 - [ ] /api/3/lesson/:lessonId/studentsTimetable
@@ -81,7 +81,7 @@
 - [ ] /api/3/komens/concepts
 - [ ] /api/3/komens/messages/received/unread
 - [x] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId
-- [ ] /api/3/timetable/actual/class/:classId
+- [x] /api/3/timetable/actual/class/:classId
 - [ ] /api/3/gdpr/consents/person
 - [ ] /api/3/komens/messages/unread
 - [x] /api/3/absence
@@ -89,8 +89,8 @@
 - [ ] /api/3/komens/messages/apology
 - [x] /api/3/events
 - [ ] /api/3/komens/concepts/count
-- [ ] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId/students
-- [ ] /api/3/payments/regularpayments
+- [x] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId/students
+- [x] /api/3/payments/regularpayments
 - [ ] /api/3/komens/messages/noticeboard/:messageId&
 - [ ] /api/3/komens/message-types/reply/:messageId
 - [x] /api/3/payments/regularpayments/teacher/prescriptions
@@ -105,7 +105,7 @@
 - [ ] /api/3/komens/messages/noticeboard/unread
 - [ ] /api/3/komens/message-types
 - [x] /api/3/events/my
-- [ ] /api/3/gdpr/commissioners
+- [x] /api/3/gdpr/commissioners
 - [ ] /api/3/classbook/:recordId
 - [ ] /api/3/marking/marks/:atomId
 - [x] /api/3/substitutions/cycles
@@ -125,3 +125,4 @@
 - [ ] /api/3/komens/messages/sent/:messageId
 - [x] /api/login
 - [x] /.well-known/openid-configuration
+- [x] /api
