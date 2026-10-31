@@ -1,9 +1,7 @@
 mod absence;
-mod attachment;
 mod others;
 //campaign
 mod auth;
-mod campaign;
 mod endpoints;
 mod error;
 mod events;
@@ -24,9 +22,7 @@ mod user; //TODOS
 //predictor
 
 pub use absence::*;
-pub use attachment::AttachmentInfo;
 pub use auth::*;
-pub use campaign::Campaign;
 pub use endpoints::*;
 pub use error::{Error, ModelState, StringArray};
 pub use events::*;
