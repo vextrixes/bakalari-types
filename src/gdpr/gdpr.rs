@@ -70,3 +70,9 @@ pub struct GdprConsentRights {
     pub can_disagree: bool,
     pub can_revoke_request: bool,
 }
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub struct GdprConsents {
+    pub person_consents: Vec<GdprConsent>,
+}

@@ -30,10 +30,7 @@ pub use campaign::Campaign;
 pub use endpoints::*;
 pub use error::{Error, ModelState, StringArray};
 pub use events::*;
-pub use gdpr::{
-    GdprCommissioner, GdprCommissioners, GdprConsent, GdprConsentRights, GdprConsentState,
-    GdprValidity,
-};
+pub use gdpr::*;
 pub use homework::*;
 pub use marks::*;
 pub use others::*;
