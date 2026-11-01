@@ -43,8 +43,8 @@ pub const REGULAR_PAYMENT_DETAIL_ENDPOINT: Endpoint<RegularPaymentDetail, ()> = 
 };
 
 pub const CLASS_FUND_TEACHER_DOCUMENT_DETAIL_ENDPOINT: Endpoint<
-    (),
     ClassFundTeacherDocumentDetail,
+    (),
 > = Endpoint::Get {
     url: "/api/3/payments/classfund/teacher/document/detail/{documentId}",
     auth: true,
