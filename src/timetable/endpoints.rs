@@ -1,13 +1,13 @@
 use crate::{Endpoint, Timetable};
 use std::marker::PhantomData;
 
-pub const PERNAMENT_TIMETABLE_ENDPOINT: Endpoint<Timetable, ()> = Endpoint::Get {
+pub const PERMAMENT_TIMETABLE_ENDPOINT: Endpoint<Timetable, ()> = Endpoint::Get {
     url: "/api/3/timetable/permanent",
     auth: true,
     _types: PhantomData,
 };
 
-pub const PERNAMENT_TIMETABLE_CLASS_ENDPOINT: Endpoint<Timetable, ()> = Endpoint::Get {
+pub const PERMAMENT_TIMETABLE_CLASS_ENDPOINT: Endpoint<Timetable, ()> = Endpoint::Get {
     url: "/api/3/timetable/permanent/class/{classId}",
     auth: true,
     _types: PhantomData,

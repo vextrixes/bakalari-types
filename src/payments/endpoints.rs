@@ -88,8 +88,8 @@ pub const REGULAR_PRESCRIPTION_DETAIL_ENDPOINT: Endpoint<RegularPrescriptionDeta
     };
 
 pub const REGULAR_PRESCRIPTION_STUDENT_DETAIL_ENDPOINT: Endpoint<
-    (),
     RegularPrescriptionStudentDetail,
+    (),
 > = Endpoint::Get {
     url: "/api/3/payments/regularpayments/teacher/prescriptions/{prescriptionId}/students/{studentId}",
     auth: true,

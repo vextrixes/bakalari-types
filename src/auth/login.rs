@@ -15,13 +15,13 @@ pub struct LoginSuccess {
     pub app_version: String,
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)] // TODO: evaluate removing or changing debug here
 #[serde(rename_all = "snake_case")]
 pub struct LoginRequest {
-    client_id: String,
-    grant_type: String,
-    username: String,
-    password: String,
+    pub client_id: String,
+    pub grant_type: String,
+    pub username: String,
+    pub password: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

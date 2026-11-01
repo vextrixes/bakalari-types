@@ -18,7 +18,8 @@ pub struct Atom {
     pub theme: Option<String>,
     pub assistants: Vec<Assistant>,
     pub notice: Option<String>,
-    pub planned_clasification: Option<PlannedClassification>,
+    #[serde(rename = "PlannedClasification")]
+    pub planned_classification: Option<PlannedClassification>,
     pub week_theme: Option<String>,
     pub lesson_release: LessonRelease,
     pub start: Option<i64>,

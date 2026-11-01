@@ -54,7 +54,7 @@ pub struct RegularPrescriptionDetail {
     pub payment_type_id: i64,
     pub payment_type_name: Option<String>,
     pub amount: f64,
-    pub state: RegularPrescription,
+    pub state: RegularPrescriptionState,
     pub due_date_max: DateTime<FixedOffset>,
     pub bank_account: Option<String>,
     pub specific_symbol: Option<i64>,
