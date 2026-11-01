@@ -1,6 +1,5 @@
+use crate::{Module, StdType, user::ModulesSetting};
 use serde::{Deserialize, Serialize};
-
-use crate::{Module, SchoolClass, user::ModulesSetting};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
@@ -8,8 +7,8 @@ pub struct UserInfo {
     #[serde(rename = "UserUID")]
     pub user_uid: String,
     pub campaign_category_code: String,
-    pub class: Option<SchoolClass>,
-    pub teacher_classes: Option<Vec<SchoolClass>>,
+    pub class: Option<StdType>,
+    pub teacher_classes: Option<Vec<StdType>>,
     pub full_name: Option<String>,
     pub school_organization_name: Option<String>,
     pub school_type: Option<SchoolType>,
@@ -35,7 +34,7 @@ pub enum UserType {
 #[serde(rename_all = "PascalCase")]
 pub struct UserInfoStudent {
     pub full_name: String,
-    pub class: SchoolClass,
+    pub class: StdType,
     pub school_type: SchoolType,
     pub study_year: Option<i64>,
 }

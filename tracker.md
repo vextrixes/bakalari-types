@@ -6,7 +6,7 @@
 - [ ] class book
 - [x] events
 - [x] auth
-- [ ] error
+- [ ] errors
 - [x] gdpr
 - [x] homeworks
 - [ ] komens
@@ -25,3 +25,104 @@
 - [ ] documentation
 - [ ] tests
 - [ ] constructors
+
+# Endpoints
+- [ ] /api/3/komens/message/:messageId/mark-as-read
+- [x] /api/3/marks
+- [x] /api/3/homeworks/:id/student-done/:finished
+- [ ] /api/3/marking/atoms/:atomId/headers
+- [x] /api/3/payments/classfund/teacher/students/:classId
+- [ ] /api/3/classbook/lessonTags
+- [ ] /api/3/komens/messages/rating/:messageId
+- [x] /api/3/absence/student
+- [ ] /api/3/webmodule
+- [x] /api/3/timetable/actual
+- [x] /api/3/payments/classfund/teacher/document/detail/:documentId
+- [x] /api/3
+- [ ] /api/3/komens/attachment/:id
+- [x] /api/3/subjects/themes/:subjectId
+- [x] /api/3/payments/classfund
+- [x] /api/3/gdpr/consents/person/child
+- [ ] /api/3/komens/concept/:conceptId
+- [x] /api/3/marks/measures
+- [ ] /api/3/unregister-user-notification
+- [x] /api/3/gdpr/consent/:id/agree
+- [x] /api/3/marks/count-new
+- [ ] /api/3/komens/concept
+- [x] /api/3/timetable/permanent
+- [ ] /api/3/komens/messages/noticeboard
+- [ ] /api/3/komens/messages/apology/:messageId
+- [ ] /api/3/komens/messages/received/:messageId
+- [x] /api/3/user
+- [x] /api/3/payments/regularpayments/detail/:paymentId
+- [x] /api/3/substitutions
+- [ ] /api/3/marks/what-if
+- [x] /api/3/gdpr/commissioner/send-objection
+- [x] /api/3/gdpr/consents/person/new
+- [ ] /api/3/lesson/:lessonId/absence
+- [x] /api/3/payments/regularpayments/summary
+- [ ] /api/3/emergency/startemergency
+- [x] /api/3/timetable/permanent/class/:classId
+- [x] /api/3/gdpr/commissioner/send-report
+- [ ] /api/3/komens/message/:messageId/mark-as-unhidden
+- [ ] /api/3/lesson/:lessonId/studentsTimetable
+- [x] /api/3/marks/final
+- [x] /api/3/timetable/student/:studentId
+- [ ] /api/3/marking/atom/:atomId/headerOptions
+- [x] /api/3/gdpr/consent/:id/disagree
+- [ ] /api/3/komens/messages/sent
+- [ ] /api/3/emergency/configuration
+- [ ] /api/3/komens/message
+- [ ] /api/3/komens/message/:messageId/mark-as-hidden
+- [ ] /api/3/lesson/:lessonId/past
+- [ ] /api/3/komens/attachment
+- [ ] /api/3/komens/messages/received
+- [ ] /api/3/login/:token
+- [ ] /api/3/komens/concepts
+- [ ] /api/3/komens/messages/received/unread
+- [x] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId
+- [x] /api/3/timetable/actual/class/:classId
+- [ ] /api/3/gdpr/consents/person
+- [ ] /api/3/komens/messages/unread
+- [x] /api/3/absence
+- [ ] /api/3/komens/message/:messageId/mark-as-confirmed
+- [ ] /api/3/komens/messages/apology
+- [x] /api/3/events
+- [ ] /api/3/komens/concepts/count
+- [x] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId/students
+- [x] /api/3/payments/regularpayments
+- [ ] /api/3/komens/messages/noticeboard/:messageId&
+- [ ] /api/3/komens/message-types/reply/:messageId
+- [x] /api/3/payments/regularpayments/teacher/prescriptions
+- [x] /api/3/marks/SetClassificationConfirmation
+- [x] /api/3/homeworks/count-actual
+- [x] /api/3/gdpr/consent/:id/revoke-request
+- [x] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId/students/:studentId
+- [ ] /api/3/marking/atoms
+- [x] /api/3/absence/canexcuse/:studentId
+- [ ] /api/3/komens/rating-templates
+- [ ] /api/3/emergency/participantsselection
+- [ ] /api/3/komens/messages/noticeboard/unread
+- [ ] /api/3/komens/message-types
+- [x] /api/3/events/my
+- [x] /api/3/gdpr/commissioners
+- [ ] /api/3/classbook/:recordId
+- [ ] /api/3/marking/marks/:atomId
+- [x] /api/3/substitutions/cycles
+- [x] /api/3/logintoken
+- [ ] /api/3/komens/message-types/edit/:messageId
+- [x] /api/3/payments/classfund/teacher/documents/:classId
+- [x] /api/3/payments/classfund/summary
+- [ ] /api/3/register-notification
+- [x] /api/3/payments/classfund/paymentsinfo
+- [ ] /api/3/komens/messages/rating
+- [ ] /api/3/komens/message/:messageId
+- [x] /api/3/homeworks
+- [x] /api/3/subjects
+- [ ] /api/3/classbook
+- [x] /api/3/user/student-at-school
+- [x] /api/3/payments/classfund/teacher/summary
+- [ ] /api/3/komens/messages/sent/:messageId
+- [x] /api/login
+- [x] /.well-known/openid-configuration
+- [x] /api
