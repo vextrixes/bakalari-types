@@ -1,6 +1,5 @@
-use std::marker::PhantomData;
-
 use crate::{Endpoint, SubstitutionCycles, Substitutions};
+use std::marker::PhantomData;
 
 pub const SUBSTITUTIONS_ENDPOINT: Endpoint<Substitutions, ()> = Endpoint::Get {
     url: "/api/3/substitutions",

@@ -1,6 +1,5 @@
-use std::marker::PhantomData;
-
 use crate::{Endpoint, HomeworkList};
+use std::marker::PhantomData;
 
 pub const HOMEWORKS_COUNT_ENDPOINT: Endpoint<i64, ()> = Endpoint::Get {
     url: "/api/3/homeworks/count-actual",

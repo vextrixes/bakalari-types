@@ -1,6 +1,5 @@
-use std::marker::PhantomData;
-
 use crate::{ContentType, Endpoint, GdprCommissioners, GdprConsents};
+use std::marker::PhantomData;
 
 pub const SEND_GDPR_OBJECTION_ENDPOINT: Endpoint<(), String> = Endpoint::Post {
     url: "/api/3/gdpr/commissioner/send-objection",

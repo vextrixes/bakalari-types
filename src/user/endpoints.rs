@@ -1,6 +1,5 @@
-use std::marker::PhantomData;
-
 use crate::{Endpoint, UserInfo};
+use std::marker::PhantomData;
 
 pub const USER_INFO_ENDPOINT: Endpoint<UserInfo, ()> = Endpoint::Get {
     url: "/api/3/user",

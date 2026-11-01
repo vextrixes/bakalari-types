@@ -1,11 +1,10 @@
+use crate::{Hour, StdType, StdTypeNullable};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 
-use crate::{Hour, StdType, StdTypeNullable};
-
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct StudentAbsenceOverviewResponse {
+pub struct AbsenceOverviewResponse {
     pub percentage_threshold: f64, //TODO: cutom type (u8)
     pub absences: Vec<AbsenceDay>,
     pub absences_per_subject: Option<Vec<SubjectAbsence>>,
@@ -38,16 +37,8 @@ pub struct SubjectAbsence {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct SubjectAbsenceOverviewResponse {
-    pub percentage_threshold: f64,
-    pub absences: Option<Vec<AbsenceDay>>,
-    pub absences_per_subject: Option<Vec<SubjectAbsence>>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
 pub struct StudentTimetableAbsenceResponse {
-    pub student: Option<StudentInfo>,
+    pub student: Option<StdTypeNullable>,
     pub days: Vec<AbsenceDayResponse>,
     pub absent_type_options: Vec<AbsenceTypeOption>,
 }
@@ -60,7 +51,7 @@ pub struct AbsenceTypeOption {
     pub absent_kind_required: bool,
     pub absent_note_enabled: bool,
     pub next_absent_type: AbsentType,
-    pub absent_kinds: Vec<AbsenceKind>,
+    pub absent_kinds: Vec<StdType>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -75,9 +66,6 @@ pub enum AbsentType {
     DistanceTeaching,
     NoAbsent,
 }
-
-type StudentInfo = StdTypeNullable;
-type AbsenceKind = StdType;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]

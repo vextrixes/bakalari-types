@@ -1,11 +1,10 @@
-use std::marker::PhantomData;
-
 use crate::{
     ClassFundMonthly, ClassFundPaymentInfo, ClassFundSummary, ClassFundTeacherDocumentDetail,
     ClassFundTeacherDocumentsMonthly, ClassFundTeacherStudentsItem, ClassFundTeacherSummary,
     Endpoint, RegularPayment, RegularPaymentDetail, RegularPaymentsSummary, RegularPrescription,
     RegularPrescriptionDetail, RegularPrescriptionStudent, RegularPrescriptionStudentDetail,
 };
+use std::marker::PhantomData;
 
 pub const CLASS_FUND_PAYMENT_INFO_ENDPOINT: Endpoint<ClassFundPaymentInfo, ()> = Endpoint::Get {
     url: "/api/3/payments/classfund/paymentsinfo",

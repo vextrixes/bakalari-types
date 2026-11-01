@@ -1,6 +1,5 @@
-use std::marker::PhantomData;
-
 use crate::{ContentType, Endpoint, LoginSuccess, OpenIdDiscovery, auth::login::LoginRequest};
+use std::marker::PhantomData;
 
 pub const LOGIN_ENDPOINT: Endpoint<LoginSuccess, LoginRequest> = Endpoint::Post {
     url: "/api/login",

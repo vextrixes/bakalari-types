@@ -1,7 +1,6 @@
+use crate::StdType;
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
-
-use crate::{Room, StdType, Student, Teacher};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
@@ -11,10 +10,10 @@ pub struct Timetable {
     pub classes: Vec<StdType>,
     pub groups: Vec<Group>,
     pub subjects: Vec<StdType>,
-    pub rooms: Vec<Room>,
-    pub teachers: Vec<Teacher>,
+    pub rooms: Vec<StdType>,
+    pub teachers: Vec<StdType>,
     pub cycles: Vec<StdType>,
-    pub students: Vec<Student>,
+    pub students: Vec<StdType>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

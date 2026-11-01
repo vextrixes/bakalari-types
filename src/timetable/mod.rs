@@ -1,5 +1,5 @@
-mod timetable;
 mod endpoints;
+mod timetable;
 
-pub use timetable::*;
 pub use endpoints::*;
+pub use timetable::*;

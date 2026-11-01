@@ -1,6 +1,5 @@
-use std::marker::PhantomData;
-
 use crate::{Endpoint, Timetable};
+use std::marker::PhantomData;
 
 pub const PERNAMENT_TIMETABLE_ENDPOINT: Endpoint<Timetable, ()> = Endpoint::Get {
     url: "/api/3/timetable/permanent",
@@ -14,13 +13,11 @@ pub const PERNAMENT_TIMETABLE_CLASS_ENDPOINT: Endpoint<Timetable, ()> = Endpoint
     _types: PhantomData,
 };
 
-
 pub const WEEK_TIMETABLE_ENDPOINT: Endpoint<Timetable, ()> = Endpoint::Get {
     url: "/api/3/timetable/actual",
     auth: true,
     _types: PhantomData,
 };
-
 
 pub const WEEK_TIMETABLE_CLASS_ENDPOINT: Endpoint<Timetable, ()> = Endpoint::Get {
     url: "/api/3/timetable/actual/class/{classId}",

@@ -1,6 +1,5 @@
-use std::marker::PhantomData;
-
 use crate::{Endpoint, Teaching};
+use std::marker::PhantomData;
 
 /// Subject ID = String
 pub const TEACHING_ENDPOINT: Endpoint<Teaching, ()> = Endpoint::Get {

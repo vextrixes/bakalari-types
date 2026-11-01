@@ -1,6 +1,5 @@
-use std::marker::PhantomData;
-
 use crate::{ContentType, Endpoint, Marks};
+use std::marker::PhantomData;
 
 pub const CONFIRM_MARKS_ENDPOINT: Endpoint<(), Vec<String>> = Endpoint::Post {
     url: "/api/3/marks/SetClassificationConfirmation",

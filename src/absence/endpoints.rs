@@ -1,9 +1,8 @@
-use std::marker::PhantomData;
-
 use crate::{
-    ContentType, Endpoint, ExcuseAbsenceResponse, StudentAbsenceOverviewResponse,
+    AbsenceOverviewResponse, ContentType, Endpoint, ExcuseAbsenceResponse,
     StudentTimetableAbsenceResponse,
 };
+use std::marker::PhantomData;
 
 pub const CAN_STUDENT_EXCUSE_ABSENCE_ENDPOINT: Endpoint<bool, ()> = Endpoint::Get {
     url: "/api/3/absence/canexcuse/{studentId}",
@@ -11,12 +10,11 @@ pub const CAN_STUDENT_EXCUSE_ABSENCE_ENDPOINT: Endpoint<bool, ()> = Endpoint::Ge
     _types: PhantomData,
 };
 
-pub const GET_STUDENT_ABSENCE_ENDPOINT: Endpoint<StudentAbsenceOverviewResponse, ()> =
-    Endpoint::Get {
-        url: "/api/3/absence/student",
-        auth: true,
-        _types: PhantomData,
-    };
+pub const GET_STUDENT_ABSENCE_ENDPOINT: Endpoint<AbsenceOverviewResponse, ()> = Endpoint::Get {
+    url: "/api/3/absence/student",
+    auth: true,
+    _types: PhantomData,
+};
 
 pub const GET_STUDENT_TIMETABLE_WITH_ABSENCES_ENDPOINT: Endpoint<
     StudentTimetableAbsenceResponse,

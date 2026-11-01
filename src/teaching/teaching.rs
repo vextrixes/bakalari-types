@@ -1,7 +1,6 @@
+use crate::Subject;
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
-
-use crate::Subject;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]

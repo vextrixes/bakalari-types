@@ -1,6 +1,7 @@
 use std::marker::PhantomData;
 
 pub enum Endpoint<Response, Request> {
+    //TODO: better url handling. (defining api version/is base url used/query/url params)
     Get {
         url: &'static str,
         auth: bool,
