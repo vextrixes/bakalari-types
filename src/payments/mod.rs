@@ -1,5 +1,9 @@
+mod class_fund;
+mod common;
 mod endpoints;
-mod payments;
+mod regular_payments;
 
+pub use class_fund::*;
+pub use common::*;
 pub use endpoints::*;
-pub use payments::*;
+pub use regular_payments::*;

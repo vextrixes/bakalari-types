@@ -1,4 +1,4 @@
-use crate::{Endpoint, HomeworkList};
+use crate::{Endpoint, Homeworks};
 use std::marker::PhantomData;
 
 pub const HOMEWORKS_COUNT_ENDPOINT: Endpoint<i64, ()> = Endpoint::Get {
@@ -16,7 +16,7 @@ pub const HOMEWORK_DONE_ENDPOINT: Endpoint<bool, ()> = Endpoint::Get {
 };
 
 /// Query 'from' and 'to' (Datetime)
-pub const HOMEWORKS_ENDPOINT: Endpoint<HomeworkList, ()> = Endpoint::Get {
+pub const HOMEWORKS_ENDPOINT: Endpoint<Homeworks, ()> = Endpoint::Get {
     url: "/api/3/homeworks",
     auth: true,
     _types: PhantomData,

@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct HomeworkItem {
+pub struct Homework {
     #[serde(rename = "ID")]
     pub id: String,
     pub date_start: DateTime<FixedOffset>,
@@ -25,6 +25,6 @@ pub struct HomeworkItem {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct HomeworkList {
-    pub homeworks: Vec<HomeworkItem>,
+pub struct Homeworks {
+    pub homeworks: Vec<Homework>,
 }

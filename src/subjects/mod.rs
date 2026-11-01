@@ -1,5 +1,5 @@
 mod endpoints;
-mod subject_types;
+mod subject;
 
 pub use endpoints::*;
-pub use subject_types::*;
+pub use subject::*;

@@ -2,12 +2,6 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct Subjects {
-    pub subjects: Vec<Subject>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
 pub struct Subject {
     pub subject_id: String,
     pub subject_name: String,
@@ -20,4 +14,10 @@ pub struct Subject {
     pub teacher_school_phone: Option<String>,
     pub teacher_home_phone: Option<String>,
     pub teacher_mobile_phone: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub struct Subjects {
+    pub subjects: Vec<Subject>,
 }
