@@ -6,7 +6,7 @@ mod endpoints;
 mod events;
 mod gdpr;
 //komens
-mod homework; //TDOS
+mod homework;
 //marking
 mod marks;
 mod payments;
