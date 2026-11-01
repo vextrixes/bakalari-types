@@ -65,8 +65,8 @@ pub const CLASS_FUND_TEACHER_STUDENTS_ENDPOINT: Endpoint<Vec<ClassFundTeacherStu
     };
 
 pub const CLASS_FUND_TEACHER_DOCUMENTS_ENDPOINT: Endpoint<
-    (),
     Vec<ClassFundTeacherDocumentsMonthly>,
+    (),
 > = Endpoint::Get {
     url: "/api/3/payments/classfund/teacher/documents/{classId}",
     auth: true,
