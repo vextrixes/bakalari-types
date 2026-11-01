@@ -5,14 +5,6 @@ use crate::PaymentsTeacherStudentStatus;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassfundSummary {
-    pub student_name_with_class: Option<String>,
-    pub balance: f64,
-    pub spent: f64,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
 pub struct ClassFundPaymentInfo {
     pub instructions: Option<String>,
     pub bank_account: Option<String>,
