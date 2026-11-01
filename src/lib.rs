@@ -1,14 +1,11 @@
 mod absence;
-mod others;
-//campaign
 mod auth;
 mod endpoints;
 mod events;
 mod gdpr;
-//komens
 mod homework;
-//marking
 mod marks;
+mod others;
 mod payments;
 mod semester;
 mod stdtype;
@@ -17,7 +14,10 @@ mod substitutions;
 mod teaching;
 mod timetable;
 mod user;
-//webmodules
+mod webmodules;
+//campaign
+//marking
+//komens
 //predictor
 
 pub use absence::*;
@@ -36,3 +36,4 @@ pub use substitutions::*;
 pub use teaching::*;
 pub use timetable::*;
 pub use user::*;
+pub use webmodules::*;

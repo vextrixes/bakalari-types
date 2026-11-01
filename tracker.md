@@ -1,6 +1,6 @@
 # implementations
 
-- [ ] absence
+- [x] absence
 - [x] campaign
 - [ ] campaign error
 - [ ] class book
@@ -17,7 +17,7 @@
 - [x] substitutions
 - [x] teaching
 - [x] timetable
-- [ ] webmodules
+- [x] webmodules
 - [x] user
 
 # Features
@@ -35,7 +35,7 @@
 - [ ] /api/3/classbook/lessonTags
 - [ ] /api/3/komens/messages/rating/:messageId
 - [x] /api/3/absence/student
-- [ ] /api/3/webmodule
+- [x] /api/3/webmodule
 - [x] /api/3/timetable/actual
 - [x] /api/3/payments/classfund/teacher/document/detail/:documentId
 - [x] /api/3
