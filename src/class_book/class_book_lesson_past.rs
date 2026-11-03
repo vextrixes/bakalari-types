@@ -1,3 +1,7 @@
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
 pub struct ClassBookLessonPast {
     pub lesson_id: String,
     pub last_theme: Option<String>,

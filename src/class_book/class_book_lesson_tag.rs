@@ -1,3 +1,7 @@
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
 pub struct ClassBookLessonTag {
     pub id: String,
     pub notice: String,
