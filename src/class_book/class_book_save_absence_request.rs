@@ -1,3 +1,3 @@
 pub struct ClassBookSaveAbsenceRequest {
-  //TODO
+    //TODO
 }
