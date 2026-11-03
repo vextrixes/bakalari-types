@@ -9,7 +9,7 @@ pub const EDIT_CLASSBOOK_ENDPOINT: Endpoint<(), ClassBookSaveAbsenceRequest> = E
 };
 
 pub const PREVIOUS_LESSON_INFO_CLASSBOOK_ENDPOINT: Endpoint<ClassBookLessonPast, ()> = Endpoint::Get {
-    url: "/api/3/classbook/{recordId}",
+    url: "/api/3/lesson/{lessonId}/past",
     auth: true,
     _types: PhantomData,
 };
