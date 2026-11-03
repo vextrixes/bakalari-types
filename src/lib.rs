@@ -15,11 +15,13 @@ mod teaching;
 mod timetable;
 mod user;
 mod webmodules;
+mod class_book;
 //campaign
 //marking
 //komens
 //predictor
 
+pub use class_book::*;
 pub use absence::*;
 pub use auth::*;
 pub use endpoints::*;
