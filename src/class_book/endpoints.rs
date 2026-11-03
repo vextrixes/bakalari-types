@@ -1,9 +1,9 @@
 use crate::{
-    ClassBookLessonPast, ClassBookLessonTag, ClassBookSaveAbsenceRequest, ContentType, Endpoint,
+    ClassBookLessonPast, ClassBookLessonTag, ClassBookSaveRecordRequest, ContentType, Endpoint,
 };
 use std::marker::PhantomData;
 
-pub const EDIT_CLASSBOOK_ENDPOINT: Endpoint<(), ClassBookSaveAbsenceRequest> = Endpoint::Post {
+pub const EDIT_CLASSBOOK_ENDPOINT: Endpoint<(), ClassBookSaveRecordRequest> = Endpoint::Post {
     url: "/api/3/classbook/{recordId}",
     auth: true,
     content_type: ContentType::Json,
