@@ -1,6 +1,6 @@
 use crate::{
     ClassBookAbsenceResponse, ClassBookEntries, ClassBookLessonPast, ClassBookLessonTag,
-    ClassBookSaveRecordRequest, ContentType, Endpoint,
+    ClassBookSaveRecordRequest, ClassBookStudentsTimetableResponse, ContentType, Endpoint,
 };
 use std::marker::PhantomData;
 
@@ -35,3 +35,10 @@ pub const GET_CLASSBOOK_ENDPOINT: Endpoint<ClassBookEntries, ()> = Endpoint::Get
     auth: true,
     _types: PhantomData,
 };
+
+pub const CLASSBOOK_STUDENT_TIMETABLE_ENDPOINT: Endpoint<ClassBookStudentsTimetableResponse, ()> =
+    Endpoint::Get {
+        url: "/api/3/lesson/{lessonId}/studentsTimetable",
+        auth: true,
+        _types: PhantomData,
+    };

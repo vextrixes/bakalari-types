@@ -17,6 +17,9 @@ mod class_book_school_event;
 mod class_book_school_event_interval;
 mod class_book_student_absences;
 mod class_book_student_info;
+mod class_book_student_timetable;
+mod class_book_students_timetable_response;
+mod class_book_timetable_hour;
 mod endpoints;
 
 pub use class_book_absence::*;
@@ -38,4 +41,7 @@ pub use class_book_school_event::*;
 pub use class_book_school_event_interval::*;
 pub use class_book_student_absences::*;
 pub use class_book_student_info::*;
+pub use class_book_student_timetable::*;
+pub use class_book_students_timetable_response::*;
+pub use class_book_timetable_hour::*;
 pub use endpoints::*;
