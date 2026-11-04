@@ -1,5 +1,6 @@
 mod class_book_absence;
 mod class_book_absence_group;
+mod class_book_absence_record_result;
 mod class_book_absence_response;
 mod class_book_absence_type_option;
 mod class_book_day;
@@ -24,6 +25,7 @@ mod endpoints;
 
 pub use class_book_absence::*;
 pub use class_book_absence_group::*;
+pub use class_book_absence_record_result::*;
 pub use class_book_absence_response::*;
 pub use class_book_absence_type_option::*;
 pub use class_book_day::*;

@@ -1,6 +1,7 @@
 use crate::{
-    ClassBookAbsenceResponse, ClassBookEntries, ClassBookLessonPast, ClassBookLessonTag,
-    ClassBookSaveRecordRequest, ClassBookStudentsTimetableResponse, ContentType, Endpoint,
+    ClassBookAbsenceRecordResult, ClassBookAbsenceResponse, ClassBookEntries, ClassBookLessonPast,
+    ClassBookLessonTag, ClassBookSaveAbsenceRequest, ClassBookSaveRecordRequest,
+    ClassBookStudentsTimetableResponse, ContentType, Endpoint,
 };
 use std::marker::PhantomData;
 
@@ -42,3 +43,13 @@ pub const CLASSBOOK_STUDENT_TIMETABLE_ENDPOINT: Endpoint<ClassBookStudentsTimeta
         auth: true,
         _types: PhantomData,
     };
+
+pub const EDIT_CLASSBOOK_ABSENCE_ENDPOINT: Endpoint<
+    ClassBookAbsenceRecordResult,
+    Vec<ClassBookSaveAbsenceRequest>,
+> = Endpoint::Put {
+    url: "/api/3/lesson/{lessonId}/absence",
+    auth: true,
+    content_type: ContentType::Json,
+    _types: PhantomData,
+};
