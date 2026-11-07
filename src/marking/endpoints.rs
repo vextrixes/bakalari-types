@@ -16,3 +16,9 @@ pub const GET_HEADER_OPTIONS_ENDPOINT: Endpoint<MarkingHeaderOptions, ()> = Endp
     auth: true,
     _types: PhantomData,
 };
+
+pub const GET_MARKING_HEADER_DEFINITIONS_ENDPOINT: Endpoint<MarkingHeaderDefinitions, ()> = Endpoint::Get {
+    url: "/api/3/marking/atoms/{atomId}/headers",
+    auth: true,
+    _types: PhantomData,
+};
