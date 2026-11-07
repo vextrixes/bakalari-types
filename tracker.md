@@ -1,16 +1,16 @@
-# implementations
+# API features
 
 - [x] absence
 - [x] campaign
 - [ ] campaign error
-- [ ] class book
+- [x] class book
 - [x] events
 - [x] auth
 - [ ] errors
 - [x] gdpr
 - [x] homeworks
 - [ ] komens
-- [ ] marking
+- [x] marking
 - [x] payments
 - [x] semester
 - [x] subjects
@@ -20,7 +20,7 @@
 - [x] webmodules
 - [x] user
 
-# Features
+# Libary features
 - [ ] OpenApi schema generation
 - [ ] documentation
 - [ ] tests
@@ -30,9 +30,9 @@
 - [ ] /api/3/komens/message/:messageId/mark-as-read
 - [x] /api/3/marks
 - [x] /api/3/homeworks/:id/student-done/:finished
-- [ ] /api/3/marking/atoms/:atomId/headers
+- [x] /api/3/marking/atoms/:atomId/headers
 - [x] /api/3/payments/classfund/teacher/students/:classId
-- [ ] /api/3/classbook/lessonTags
+- [x] /api/3/classbook/lessonTags
 - [ ] /api/3/komens/messages/rating/:messageId
 - [x] /api/3/absence/student
 - [x] /api/3/webmodule
@@ -59,22 +59,22 @@
 - [ ] /api/3/marks/what-if
 - [x] /api/3/gdpr/commissioner/send-objection
 - [x] /api/3/gdpr/consents/person/new
-- [ ] /api/3/lesson/:lessonId/absence
+- [x] /api/3/lesson/:lessonId/absence
 - [x] /api/3/payments/regularpayments/summary
 - [ ] /api/3/emergency/startemergency
 - [x] /api/3/timetable/permanent/class/:classId
 - [x] /api/3/gdpr/commissioner/send-report
 - [ ] /api/3/komens/message/:messageId/mark-as-unhidden
-- [ ] /api/3/lesson/:lessonId/studentsTimetable
+- [x] /api/3/lesson/:lessonId/studentsTimetable
 - [x] /api/3/marks/final
 - [x] /api/3/timetable/student/:studentId
-- [ ] /api/3/marking/atom/:atomId/headerOptions
+- [x] /api/3/marking/atom/:atomId/headerOptions
 - [x] /api/3/gdpr/consent/:id/disagree
 - [ ] /api/3/komens/messages/sent
 - [ ] /api/3/emergency/configuration
 - [ ] /api/3/komens/message
 - [ ] /api/3/komens/message/:messageId/mark-as-hidden
-- [ ] /api/3/lesson/:lessonId/past
+- [x] /api/3/lesson/:lessonId/past
 - [ ] /api/3/komens/attachment
 - [ ] /api/3/komens/messages/received
 - [ ] /api/3/login/:token
@@ -82,7 +82,7 @@
 - [ ] /api/3/komens/messages/received/unread
 - [x] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId
 - [x] /api/3/timetable/actual/class/:classId
-- [ ] /api/3/gdpr/consents/person
+- [x] /api/3/gdpr/consents/person
 - [ ] /api/3/komens/messages/unread
 - [x] /api/3/absence
 - [ ] /api/3/komens/message/:messageId/mark-as-confirmed
@@ -98,7 +98,7 @@
 - [x] /api/3/homeworks/count-actual
 - [x] /api/3/gdpr/consent/:id/revoke-request
 - [x] /api/3/payments/regularpayments/teacher/prescriptions/:prescriptionId/students/:studentId
-- [ ] /api/3/marking/atoms
+- [x] /api/3/marking/atoms
 - [x] /api/3/absence/canexcuse/:studentId
 - [ ] /api/3/komens/rating-templates
 - [ ] /api/3/emergency/participantsselection
@@ -106,8 +106,8 @@
 - [ ] /api/3/komens/message-types
 - [x] /api/3/events/my
 - [x] /api/3/gdpr/commissioners
-- [ ] /api/3/classbook/:recordId
-- [ ] /api/3/marking/marks/:atomId
+- [x] /api/3/classbook/:recordId
+- [x] /api/3/marking/marks/:atomId
 - [x] /api/3/substitutions/cycles
 - [x] /api/3/logintoken
 - [ ] /api/3/komens/message-types/edit/:messageId
@@ -119,7 +119,7 @@
 - [ ] /api/3/komens/message/:messageId
 - [x] /api/3/homeworks
 - [x] /api/3/subjects
-- [ ] /api/3/classbook
+- [x] /api/3/classbook
 - [x] /api/3/user/student-at-school
 - [x] /api/3/payments/classfund/teacher/summary
 - [ ] /api/3/komens/messages/sent/:messageId
