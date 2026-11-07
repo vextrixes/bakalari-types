@@ -18,7 +18,7 @@ pub struct ClassBookRecord {
     pub private_notice: Option<String>,
     pub theme: Option<String>,
     pub week_theme: Option<String>,
-    pub date: Option<DateTime<FixedOffset>>,
+    pub date: DateTime<FixedOffset>,
     pub hour_caption: Option<String>,
     pub subject: Option<StdTypeAbbrevNullable>,
     pub change_text: Option<String>,

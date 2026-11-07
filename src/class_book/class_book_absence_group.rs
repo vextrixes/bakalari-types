@@ -6,5 +6,5 @@ use serde::{Deserialize, Serialize};
 pub struct ClassBookAbsenceGroup {
     pub students_absences: Vec<ClassBookStudentAbsences>,
     pub absent_type_options: Vec<ClassBookAbsenceTypeOption>,
-    pub group: Option<ClassBookGroupInfo>,
+    pub group: ClassBookGroupInfo,
 }

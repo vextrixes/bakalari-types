@@ -12,6 +12,6 @@ pub struct ClassBookSaveRecordRequest {
     private_notice: Option<String>,
     tags: Vec<ClassBookLessonTag>,
     theme: Option<String>,
-    week_theme: Option<String>, //TODO: check nullability
+    week_theme: Option<String>,
     groups: Vec<ClassBookGroupInfo>,
 }

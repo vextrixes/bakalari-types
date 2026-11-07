@@ -107,7 +107,7 @@ pub struct ClassbookModuleSettings {
     #[serde(rename = "$type")]
     pub r#type: ModulesSettingType,
     pub absence_calculation_type: AbsenceCalculationType,
-    pub absence_calculation_period: ActualSemester,
+    pub absence_calculation_period: Vec<ActualSemester>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

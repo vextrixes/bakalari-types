@@ -19,7 +19,7 @@ pub const PREVIOUS_LESSON_INFO_CLASSBOOK_ENDPOINT: Endpoint<ClassBookLessonPast,
         _types: PhantomData,
     };
 
-pub const LESSON_TAGS_CLASSBOOK_ENDPOINT: Endpoint<ClassBookLessonTag, ()> = Endpoint::Get {
+pub const LESSON_TAGS_CLASSBOOK_ENDPOINT: Endpoint<Vec<ClassBookLessonTag>, ()> = Endpoint::Get {
     url: "/api/3/classbook/lessonTags",
     auth: true,
     _types: PhantomData,
