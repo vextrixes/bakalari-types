@@ -7,6 +7,7 @@ mod marking_header_options;
 mod marking_mark;
 mod marking_type;
 mod marking_type_options;
+mod save_mark_request;
 
 pub use atom_marks::*;
 pub use endpoints::*;
@@ -17,3 +18,4 @@ pub use marking_header_options::*;
 pub use marking_mark::*;
 pub use marking_type::*;
 pub use marking_type_options::*;
+pub use save_mark_request::*;
