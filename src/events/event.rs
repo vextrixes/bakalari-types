@@ -1,4 +1,4 @@
-use crate::{events::EventTime, common::StdType};
+use crate::{events::EventTime, common_types::StdType};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 

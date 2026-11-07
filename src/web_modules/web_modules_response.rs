@@ -1,4 +1,4 @@
-use crate::webmodules::{WebModule, WebModuleDashboard};
+use crate::web_modules::{WebModule, WebModuleDashboard};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -1,11 +1,11 @@
-use crate::webmodules::{WebModuleIcon, WebModuleSubMenu};
+use crate::web_modules::{WebModuleIcon, WebModuleSubMenu};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct WebModule {
+pub struct WebModuleDashboard {
     pub icon_id: WebModuleIcon,
-    pub url: Option<String>,
-    pub name: String,
+    pub url: String,
+    pub name: Option<String>,
     pub sub_menu: Vec<WebModuleSubMenu>,
 }

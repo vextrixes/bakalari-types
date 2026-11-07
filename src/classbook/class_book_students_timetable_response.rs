@@ -1,4 +1,4 @@
-use crate::class_book::ClassBookStudentTimetable;
+use crate::classbook::ClassBookStudentTimetable;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

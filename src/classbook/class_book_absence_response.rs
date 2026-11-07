@@ -1,4 +1,4 @@
-use crate::class_book::{ClassBookAbsenceGroup, ClassBookHour, ClassBookSchoolEvent};
+use crate::classbook::{ClassBookAbsenceGroup, ClassBookHour, ClassBookSchoolEvent};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

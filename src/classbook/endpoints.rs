@@ -1,5 +1,5 @@
 use crate::{
-    class_book::{
+    classbook::{
         ClassBookAbsenceRecordResult, ClassBookAbsenceResponse, ClassBookEntries,
         ClassBookLessonPast, ClassBookLessonTag, ClassBookSaveAbsenceRequest,
         ClassBookSaveRecordRequest, ClassBookStudentsTimetableResponse,

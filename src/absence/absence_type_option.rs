@@ -1,4 +1,4 @@
-use crate::{absence::AbsentType, common::StdType};
+use crate::{absence::AbsentType, common_types::StdType};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

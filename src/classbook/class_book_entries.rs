@@ -1,4 +1,4 @@
-use crate::class_book::ClassBookDay;
+use crate::classbook::ClassBookDay;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

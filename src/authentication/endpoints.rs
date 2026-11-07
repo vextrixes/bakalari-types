@@ -1,5 +1,5 @@
 use crate::{
-    auth::{LoginRequest, LoginSuccess, OpenIdDiscovery},
+    authentication::{LoginRequest, LoginSuccess, OpenIdDiscovery},
     endpoints::{ContentType, Endpoint},
 };
 use std::marker::PhantomData;

@@ -1,6 +1,6 @@
 use crate::{
     endpoints::Endpoint,
-    semester::{CertificateTerms, PedagogicalMeasures},
+    semesters::{CertificateTerms, PedagogicalMeasures},
 };
 use std::marker::PhantomData;
 

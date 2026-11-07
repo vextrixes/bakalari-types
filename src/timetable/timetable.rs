@@ -1,5 +1,5 @@
 use crate::{
-    common::StdType,
+    common_types::StdType,
     timetable::{Day, Group, Hour},
 };
 use serde::{Deserialize, Serialize};
