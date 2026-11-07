@@ -1,43 +1,19 @@
-mod absence;
-mod auth;
-mod class_book;
-mod endpoints;
-mod events;
-mod gdpr;
-mod homework;
-mod marking;
-mod marks;
-mod others;
-mod payments;
-mod semester;
-mod stdtype;
-mod subjects;
-mod substitutions;
-mod teaching;
-mod timetable;
-mod user;
-mod webmodules;
-//campaign
-//marking
-//komens
-//predictor
-
-pub use absence::*;
-pub use auth::*;
-pub use class_book::*;
-pub use endpoints::*;
-pub use events::*;
-pub use gdpr::*;
-pub use homework::*;
-pub use marking::*;
-pub use marks::*;
-pub use others::*;
-pub use payments::*;
-pub use semester::*;
-pub use stdtype::*;
-pub use subjects::*;
-pub use substitutions::*;
-pub use teaching::*;
-pub use timetable::*;
-pub use user::*;
-pub use webmodules::*;
+pub mod absence;
+pub mod auth;
+pub mod class_book;
+pub mod endpoints;
+pub mod events;
+pub mod gdpr;
+pub mod homework;
+pub mod marking;
+pub mod marks;
+pub mod others;
+pub mod payments;
+pub mod semester;
+pub mod stdtype;
+pub mod subjects;
+pub mod substitutions;
+pub mod teaching;
+pub mod timetable;
+pub mod user;
+pub mod webmodules;

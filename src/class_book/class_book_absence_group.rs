@@ -1,4 +1,4 @@
-use crate::{ClassBookAbsenceTypeOption, ClassBookGroupInfo, ClassBookStudentAbsences};
+use crate::class_book::{ClassBookAbsenceTypeOption, ClassBookGroupInfo, ClassBookStudentAbsences};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

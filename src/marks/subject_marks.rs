@@ -1,4 +1,7 @@
-use crate::{Mark, StdType, StdTypeAbbrevNullable};
+use crate::{
+    marks::Mark,
+    stdtype::{StdType, StdTypeAbbrevNullable},
+};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -1,4 +1,4 @@
-use crate::{Endpoint, Teaching};
+use crate::{endpoints::Endpoint, teaching::Teaching};
 use std::marker::PhantomData;
 
 /// Subject ID = String

@@ -1,4 +1,4 @@
-use crate::{Endpoint, WebModulesResponse};
+use crate::{endpoints::Endpoint, webmodules::WebModulesResponse};
 use std::marker::PhantomData;
 
 pub const WEBMODULES_ENDPOINT: Endpoint<WebModulesResponse, ()> = Endpoint::Get {

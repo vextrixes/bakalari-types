@@ -1,6 +1,5 @@
+use crate::stdtype::StdType;
 use serde::{Deserialize, Serialize};
-
-use crate::StdType;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename = "PascalCase")]

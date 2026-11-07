@@ -1,4 +1,7 @@
-use crate::{ClassBookGroupInfo, ClassBookLessonTag, ClassBookLevel, StdTypeAbbrevNullable};
+use crate::{
+    class_book::{ClassBookGroupInfo, ClassBookLessonTag, ClassBookLevel},
+    stdtype::StdTypeAbbrevNullable,
+};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 

@@ -1,4 +1,4 @@
-use crate::{ClassBookDayType, ClassBookRecord};
+use crate::class_book::{ClassBookDayType, ClassBookRecord};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 

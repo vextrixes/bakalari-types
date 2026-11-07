@@ -1,4 +1,7 @@
-use crate::{AbsenceDayResponse, AbsenceTypeOption, StdTypeNullable};
+use crate::{
+    absence::{AbsenceDayResponse, AbsenceTypeOption},
+    stdtype::StdTypeNullable,
+};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

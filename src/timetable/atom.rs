@@ -1,6 +1,7 @@
+use crate::timetable::{
+    Assistant, HomeworkInfo, LessonRelease, PlannedClassification, TimetableChange,
+};
 use serde::{Deserialize, Serialize};
-
-use crate::{Assistant, HomeworkInfo, LessonRelease, PlannedClassification, TimetableChange};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]

@@ -1,4 +1,4 @@
-use crate::ClassBookSchoolEventInterval;
+use crate::class_book::ClassBookSchoolEventInterval;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

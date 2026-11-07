@@ -1,7 +1,6 @@
+use crate::timetable::{AssistanceAtom, Atom};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
-
-use crate::{AssistanceAtom, Atom};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]

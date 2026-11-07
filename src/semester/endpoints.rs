@@ -1,4 +1,7 @@
-use crate::{CertificateTerms, Endpoint, PedagogicalMeasures};
+use crate::{
+    endpoints::Endpoint,
+    semester::{CertificateTerms, PedagogicalMeasures},
+};
 use std::marker::PhantomData;
 
 pub const GET_CERTIFICATE_TERMS_ENDPOINT: Endpoint<CertificateTerms, ()> = Endpoint::Get {

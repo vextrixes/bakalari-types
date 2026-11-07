@@ -1,4 +1,7 @@
-use crate::{Endpoint, SubstitutionCycles, Substitutions};
+use crate::{
+    endpoints::Endpoint,
+    substitutions::{SubstitutionCycles, Substitutions},
+};
 use std::marker::PhantomData;
 
 pub const SUBSTITUTIONS_ENDPOINT: Endpoint<Substitutions, ()> = Endpoint::Get {

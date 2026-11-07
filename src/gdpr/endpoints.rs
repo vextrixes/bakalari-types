@@ -1,4 +1,7 @@
-use crate::{ContentType, Endpoint, GdprCommissioners, GdprConsents};
+use crate::{
+    endpoints::{ContentType, Endpoint},
+    gdpr::{GdprCommissioners, GdprConsents},
+};
 use std::marker::PhantomData;
 
 pub const SEND_GDPR_OBJECTION_ENDPOINT: Endpoint<(), String> = Endpoint::Post {

@@ -1,4 +1,4 @@
-use crate::{MarkCalculationType, MarkingType};
+use crate::marking::{MarkCalculationType, MarkingType};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 

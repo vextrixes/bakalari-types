@@ -1,4 +1,4 @@
-use crate::{Endpoint, Subjects};
+use crate::{endpoints::Endpoint, subjects::Subjects};
 use std::marker::PhantomData;
 
 pub const SUBJECTS_ENDPOINT: Endpoint<Subjects, ()> = Endpoint::Get {

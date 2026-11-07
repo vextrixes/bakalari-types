@@ -1,4 +1,4 @@
-use crate::{AbsenceDay, SubjectAbsence};
+use crate::absence::{AbsenceDay, SubjectAbsence};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

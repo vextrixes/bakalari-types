@@ -1,6 +1,6 @@
 use crate::{
-    AbsenceOverviewResponse, ContentType, Endpoint, ExcuseAbsenceResponse,
-    StudentTimetableAbsenceResponse,
+    absence::{AbsenceOverviewResponse, ExcuseAbsenceResponse, StudentTimetableAbsenceResponse},
+    endpoints::{ContentType, Endpoint},
 };
 use std::marker::PhantomData;
 

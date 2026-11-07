@@ -1,7 +1,9 @@
+use crate::{
+    stdtype::StdType,
+    timetable::{AtomType, Changetype},
+};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
-
-use crate::{AtomType, Changetype, StdType};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]

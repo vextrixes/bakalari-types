@@ -1,4 +1,7 @@
-use crate::{ContentType, Endpoint, LoginSuccess, OpenIdDiscovery, auth::login::LoginRequest};
+use crate::{
+    auth::{LoginRequest, LoginSuccess, OpenIdDiscovery},
+    endpoints::{ContentType, Endpoint},
+};
 use std::marker::PhantomData;
 
 pub const LOGIN_ENDPOINT: Endpoint<LoginSuccess, LoginRequest> = Endpoint::Post {

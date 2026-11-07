@@ -1,4 +1,4 @@
-use crate::Absence;
+use crate::absence::Absence;
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 

@@ -1,4 +1,4 @@
-use crate::{Endpoint, UserInfo};
+use crate::{endpoints::Endpoint, user::UserInfo};
 use std::marker::PhantomData;
 
 pub const USER_INFO_ENDPOINT: Endpoint<UserInfo, ()> = Endpoint::Get {

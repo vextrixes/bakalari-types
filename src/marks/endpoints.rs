@@ -1,4 +1,7 @@
-use crate::{ContentType, Endpoint, Marks};
+use crate::{
+    endpoints::{ContentType, Endpoint},
+    marks::Marks,
+};
 use std::marker::PhantomData;
 
 pub const CONFIRM_MARKS_ENDPOINT: Endpoint<(), Vec<String>> = Endpoint::Post {

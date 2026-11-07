@@ -1,4 +1,4 @@
-use crate::{Subject, TeachingTheme};
+use crate::{subjects::Subject, teaching::TeachingTheme};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

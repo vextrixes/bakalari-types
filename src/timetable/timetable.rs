@@ -1,4 +1,7 @@
-use crate::{Day, Group, Hour, StdType};
+use crate::{
+    stdtype::StdType,
+    timetable::{Day, Group, Hour},
+};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

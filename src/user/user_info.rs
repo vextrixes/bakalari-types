@@ -1,4 +1,7 @@
-use crate::{Module, StdType, user::ModulesSetting};
+use crate::{
+    stdtype::StdType,
+    user::{Module, ModulesSetting},
+};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

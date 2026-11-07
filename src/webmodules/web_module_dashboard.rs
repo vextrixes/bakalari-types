@@ -1,6 +1,5 @@
+use crate::webmodules::{WebModuleIcon, WebModuleSubMenu};
 use serde::{Deserialize, Serialize};
-
-use crate::{WebModuleIcon, WebModuleSubMenu};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]

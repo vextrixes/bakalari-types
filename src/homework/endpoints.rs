@@ -1,4 +1,4 @@
-use crate::{Endpoint, Homeworks};
+use crate::{endpoints::Endpoint, homework::Homeworks};
 use std::marker::PhantomData;
 
 pub const HOMEWORKS_COUNT_ENDPOINT: Endpoint<i64, ()> = Endpoint::Get {

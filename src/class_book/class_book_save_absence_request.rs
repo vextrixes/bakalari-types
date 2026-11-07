@@ -1,7 +1,6 @@
+use crate::absence::AbsentType;
 use chrono::NaiveDateTime;
 use serde::{Deserialize, Serialize};
-
-use crate::AbsentType;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]

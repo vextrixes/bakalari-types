@@ -1,5 +1,6 @@
-use crate::{Endpoint, Events};
 use std::marker::PhantomData;
+
+use crate::{endpoints::Endpoint, events::Events};
 
 pub const EVENTS_ENDPOINT: Endpoint<Events, ()> = Endpoint::Get {
     url: "/api/3/events",

@@ -1,6 +1,8 @@
 use crate::{
-    AtomMarks, ContentType, Endpoint, MarkingAtom, MarkingHeaderDefinitions, MarkingHeaderOptions,
-    SaveMarkRequest,
+    endpoints::{ContentType, Endpoint},
+    marking::{
+        AtomMarks, MarkingAtom, MarkingHeaderDefinitions, MarkingHeaderOptions, SaveMarkRequest,
+    },
 };
 use std::marker::PhantomData;
 

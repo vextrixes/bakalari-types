@@ -1,4 +1,4 @@
-use crate::{ClassBookGroupInfo, ClassBookLessonTag, ClassBookLevel};
+use crate::class_book::{ClassBookGroupInfo, ClassBookLessonTag, ClassBookLevel};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

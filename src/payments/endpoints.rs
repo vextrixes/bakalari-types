@@ -1,8 +1,11 @@
 use crate::{
-    ClassFundMonthly, ClassFundPaymentInfo, ClassFundSummary, ClassFundTeacherDocumentDetail,
-    ClassFundTeacherDocumentsMonthly, ClassFundTeacherStudentsItem, ClassFundTeacherSummary,
-    Endpoint, RegularPayment, RegularPaymentDetail, RegularPaymentsSummary, RegularPrescription,
-    RegularPrescriptionDetail, RegularPrescriptionStudent, RegularPrescriptionStudentDetail,
+    endpoints::Endpoint,
+    payments::{
+        ClassFundMonthly, ClassFundPaymentInfo, ClassFundSummary, ClassFundTeacherDocumentDetail,
+        ClassFundTeacherDocumentsMonthly, ClassFundTeacherStudentsItem, ClassFundTeacherSummary,
+        RegularPayment, RegularPaymentDetail, RegularPaymentsSummary, RegularPrescription,
+        RegularPrescriptionDetail, RegularPrescriptionStudent, RegularPrescriptionStudentDetail,
+    },
 };
 use std::marker::PhantomData;
 

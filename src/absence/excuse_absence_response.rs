@@ -1,4 +1,4 @@
-use crate::{AbsenceRecord, Hour};
+use crate::{absence::AbsenceRecord, timetable::Hour};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

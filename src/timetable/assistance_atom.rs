@@ -1,6 +1,5 @@
+use crate::timetable::TimetableChange;
 use serde::{Deserialize, Serialize};
-
-use crate::TimetableChange;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]

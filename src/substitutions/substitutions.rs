@@ -1,4 +1,4 @@
-use crate::SubstitutionChange;
+use crate::substitutions::SubstitutionChange;
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 

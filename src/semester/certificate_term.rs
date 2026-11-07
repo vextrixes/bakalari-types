@@ -1,4 +1,4 @@
-use crate::{FinalMark, StdTypeNullable};
+use crate::{semester::FinalMark, stdtype::StdTypeNullable};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 

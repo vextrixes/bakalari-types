@@ -1,7 +1,10 @@
 use crate::{
-    ClassBookAbsenceRecordResult, ClassBookAbsenceResponse, ClassBookEntries, ClassBookLessonPast,
-    ClassBookLessonTag, ClassBookSaveAbsenceRequest, ClassBookSaveRecordRequest,
-    ClassBookStudentsTimetableResponse, ContentType, Endpoint,
+    class_book::{
+        ClassBookAbsenceRecordResult, ClassBookAbsenceResponse, ClassBookEntries,
+        ClassBookLessonPast, ClassBookLessonTag, ClassBookSaveAbsenceRequest,
+        ClassBookSaveRecordRequest, ClassBookStudentsTimetableResponse,
+    },
+    endpoints::{ContentType, Endpoint},
 };
 use std::marker::PhantomData;
 

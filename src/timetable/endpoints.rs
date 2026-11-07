@@ -1,4 +1,4 @@
-use crate::{Endpoint, Timetable};
+use crate::{endpoints::Endpoint, timetable::Timetable};
 use std::marker::PhantomData;
 
 pub const PERMAMENT_TIMETABLE_ENDPOINT: Endpoint<Timetable, ()> = Endpoint::Get {

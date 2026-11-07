@@ -1,4 +1,4 @@
-use crate::{AttachmentInfo, StdType};
+use crate::{others::AttachmentInfo, stdtype::StdType};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 

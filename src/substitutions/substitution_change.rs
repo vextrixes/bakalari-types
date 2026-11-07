@@ -1,4 +1,8 @@
-use crate::{AtomType, ChangeDisplayType, ChangeLessonInfo, Subject, SubstitutionChangeType};
+use crate::{
+    subjects::Subject,
+    substitutions::{ChangeDisplayType, ChangeLessonInfo, SubstitutionChangeType},
+    timetable::AtomType,
+};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 

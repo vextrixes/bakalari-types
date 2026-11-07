@@ -1,4 +1,7 @@
-use crate::{GdprConsentRights, GdprConsentState, GdprValidity, UserType};
+use crate::{
+    gdpr::{GdprConsentRights, GdprConsentState, GdprValidity},
+    user::UserType,
+};
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 
