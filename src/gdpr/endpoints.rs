@@ -1,6 +1,6 @@
 use crate::{
     endpoints::{ContentType, Endpoint},
-    gdpr::{GdprCommissioners, GdprConsents},
+    gdpr::{Commissioners, Consents},
 };
 use std::marker::PhantomData;
 
@@ -46,19 +46,19 @@ pub const SEND_GDPR_REPORT_ENDPOINT: Endpoint<(), ()> = Endpoint::Post {
     _types: PhantomData,
 };
 
-pub const GET_GDPR_COMMISSIONERS_ENDPOINT: Endpoint<GdprCommissioners, ()> = Endpoint::Get {
+pub const GET_GDPR_COMMISSIONERS_ENDPOINT: Endpoint<Commissioners, ()> = Endpoint::Get {
     url: "/api/3/gdpr/commissioners",
     auth: true,
     _types: PhantomData,
 };
 
-pub const GET_GDPR_CHILD_CONSENTS_ENDPOINT: Endpoint<GdprConsents, ()> = Endpoint::Get {
+pub const GET_GDPR_CHILD_CONSENTS_ENDPOINT: Endpoint<Consents, ()> = Endpoint::Get {
     url: "/api/3/gdpr/consents/person/child",
     auth: true,
     _types: PhantomData,
 };
 
-pub const GET_GDPR_CONSENTS_ENDPOINT: Endpoint<GdprConsents, ()> = Endpoint::Get {
+pub const GET_GDPR_CONSENTS_ENDPOINT: Endpoint<Consents, ()> = Endpoint::Get {
     url: "/api/3/gdpr/consents/person",
     auth: true,
     _types: PhantomData,

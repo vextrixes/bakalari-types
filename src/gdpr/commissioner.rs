@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct GdprCommissioner {
+pub struct Commissioner {
     pub id: String,
     pub name: String,
     pub mobile: String,
@@ -14,6 +14,6 @@ pub struct GdprCommissioner {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct GdprCommissioners {
-    pub commissioners: Vec<GdprCommissioner>,
+pub struct Commissioners {
+    pub commissioners: Vec<Commissioner>,
 }
