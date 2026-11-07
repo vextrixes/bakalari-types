@@ -1,5 +1,6 @@
 mod atom_marks;
 mod endpoints;
+mod marking_atom;
 mod marking_calculation_type;
 mod marking_header;
 mod marking_header_definitions;
@@ -11,6 +12,7 @@ mod save_mark_request;
 
 pub use atom_marks::*;
 pub use endpoints::*;
+pub use marking_atom::*;
 pub use marking_calculation_type::*;
 pub use marking_header::*;
 pub use marking_header_definitions::*;
