@@ -1,5 +1,6 @@
 mod absence;
 mod auth;
+mod class_book;
 mod endpoints;
 mod events;
 mod gdpr;
@@ -22,6 +23,7 @@ mod webmodules;
 
 pub use absence::*;
 pub use auth::*;
+pub use class_book::*;
 pub use endpoints::*;
 pub use events::*;
 pub use gdpr::*;
