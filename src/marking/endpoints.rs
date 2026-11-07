@@ -41,7 +41,7 @@ pub const SAVE_MARK_ENDPOINT: Endpoint<AtomMarks, SaveMarkRequest> = Endpoint::P
 };
 
 pub const GET_MARK_ATOMS_ENDPOINT: Endpoint<Vec<MarkingAtom>, ()> = Endpoint::Get {
-    url: "/api/3/marking/marks/{atomId}",
+    url: "/api/3/marking/atoms",
     auth: true,
     _types: PhantomData,
 };
