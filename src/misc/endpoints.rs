@@ -1,4 +1,4 @@
-use crate::{endpoints::Endpoint, other::ApiInfo};
+use crate::{endpoints::Endpoint, misc::ApiInfo};
 use std::marker::PhantomData;
 
 pub const API_V3_INFO_ENDPOINT: Endpoint<ApiInfo, ()> = Endpoint::Get {

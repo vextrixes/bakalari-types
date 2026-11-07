@@ -1,6 +1,6 @@
 use crate::{
-    marks::Mark,
     common_types::{StdType, StdTypeAbbrevNullable},
+    marks::Mark,
 };
 use serde::{Deserialize, Serialize};
 

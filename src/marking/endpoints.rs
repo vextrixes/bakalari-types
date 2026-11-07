@@ -1,20 +1,16 @@
 use crate::{
     endpoints::{ContentType, Endpoint},
-    marking::{
-        AtomMarks, Atom, HeaderDefinitions, HeaderOptions, SaveMarkRequest,
-    },
+    marking::{Atom, AtomMarks, HeaderDefinitions, HeaderOptions, SaveMarkRequest},
 };
 use std::marker::PhantomData;
 
-pub const SAVE_CLASSIFICATION_HEADER_ENDPOINT: Endpoint<
-    HeaderDefinitions,
-    HeaderDefinitions,
-> = Endpoint::Post {
-    url: "/api/3/marking/atoms/{atomId}/headers",
-    auth: true,
-    content_type: ContentType::Json,
-    _types: PhantomData,
-};
+pub const SAVE_CLASSIFICATION_HEADER_ENDPOINT: Endpoint<HeaderDefinitions, HeaderDefinitions> =
+    Endpoint::Post {
+        url: "/api/3/marking/atoms/{atomId}/headers",
+        auth: true,
+        content_type: ContentType::Json,
+        _types: PhantomData,
+    };
 
 pub const GET_HEADER_OPTIONS_ENDPOINT: Endpoint<HeaderOptions, ()> = Endpoint::Get {
     url: "/api/3/marking/atom/{atomId}/headerOptions",
