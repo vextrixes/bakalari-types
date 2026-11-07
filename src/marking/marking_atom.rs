@@ -1,4 +1,4 @@
-use crate::stdtype::StdType;
+use crate::common::StdType;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

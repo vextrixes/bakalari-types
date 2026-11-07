@@ -1,5 +1,5 @@
 use crate::{
-    stdtype::StdType,
+    common::StdType,
     user::{Module, ModulesSetting},
 };
 use serde::{Deserialize, Serialize};

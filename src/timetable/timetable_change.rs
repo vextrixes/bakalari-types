@@ -1,5 +1,5 @@
 use crate::{
-    stdtype::StdType,
+    common::StdType,
     timetable::{AtomType, Changetype},
 };
 use chrono::{DateTime, FixedOffset};

@@ -10,7 +10,7 @@ pub mod marks;
 pub mod others;
 pub mod payments;
 pub mod semester;
-pub mod stdtype;
+pub mod common;
 pub mod subjects;
 pub mod substitutions;
 pub mod teaching;

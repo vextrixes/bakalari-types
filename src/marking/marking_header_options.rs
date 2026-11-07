@@ -1,4 +1,4 @@
-use crate::{marking::MarkingTypeOptions, stdtype::StdType};
+use crate::{marking::MarkingTypeOptions, common::StdType};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

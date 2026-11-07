@@ -1,6 +1,6 @@
 use crate::{
     absence::{AbsenceDayResponse, AbsenceTypeOption},
-    stdtype::StdTypeNullable,
+    common::StdTypeNullable,
 };
 use serde::{Deserialize, Serialize};
 
