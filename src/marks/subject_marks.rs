@@ -18,5 +18,5 @@ pub struct SubjectMarks {
 #[serde(rename_all = "PascalCase")]
 pub struct Marks {
     pub subjects: Vec<SubjectMarks>,
-    pub mark_options: Vec<StdTypeAbbrevNullable>
+    pub mark_options: Vec<StdTypeAbbrevNullable>,
 }
