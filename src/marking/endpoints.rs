@@ -1,14 +1,14 @@
 use crate::{
     endpoints::{ContentType, Endpoint},
     marking::{
-        AtomMarks, MarkingAtom, MarkingHeaderDefinitions, MarkingHeaderOptions, SaveMarkRequest,
+        AtomMarks, Atom, HeaderDefinitions, HeaderOptions, SaveMarkRequest,
     },
 };
 use std::marker::PhantomData;
 
 pub const SAVE_CLASSIFICATION_HEADER_ENDPOINT: Endpoint<
-    MarkingHeaderDefinitions,
-    MarkingHeaderDefinitions,
+    HeaderDefinitions,
+    HeaderDefinitions,
 > = Endpoint::Post {
     url: "/api/3/marking/atoms/{atomId}/headers",
     auth: true,
@@ -16,13 +16,13 @@ pub const SAVE_CLASSIFICATION_HEADER_ENDPOINT: Endpoint<
     _types: PhantomData,
 };
 
-pub const GET_HEADER_OPTIONS_ENDPOINT: Endpoint<MarkingHeaderOptions, ()> = Endpoint::Get {
+pub const GET_HEADER_OPTIONS_ENDPOINT: Endpoint<HeaderOptions, ()> = Endpoint::Get {
     url: "/api/3/marking/atom/{atomId}/headerOptions",
     auth: true,
     _types: PhantomData,
 };
 
-pub const GET_MARKING_HEADER_DEFINITIONS_ENDPOINT: Endpoint<MarkingHeaderDefinitions, ()> =
+pub const GET_MARKING_HEADER_DEFINITIONS_ENDPOINT: Endpoint<HeaderDefinitions, ()> =
     Endpoint::Get {
         url: "/api/3/marking/atoms/{atomId}/headers",
         auth: true,
@@ -42,7 +42,7 @@ pub const SAVE_MARK_ENDPOINT: Endpoint<AtomMarks, SaveMarkRequest> = Endpoint::P
     _types: PhantomData,
 };
 
-pub const GET_MARK_ATOMS_ENDPOINT: Endpoint<Vec<MarkingAtom>, ()> = Endpoint::Get {
+pub const GET_MARK_ATOMS_ENDPOINT: Endpoint<Vec<Atom>, ()> = Endpoint::Get {
     url: "/api/3/marking/atoms",
     auth: true,
     _types: PhantomData,

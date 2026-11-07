@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename = "PascalCase")]
-pub struct MarkingMark {
+pub struct Mark {
     pub id: String,
     pub edit_date: DateTime<FixedOffset>,
     pub read_only: bool,

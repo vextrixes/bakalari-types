@@ -4,13 +4,13 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename = "PascalCase")]
-pub struct MarkingHeaderDefinitions {
-    pub header_definitions: Vec<MarkingHeaderDefinition>,
+pub struct HeaderDefinitions {
+    pub header_definitions: Vec<HeaderDefinition>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename = "PascalCase")]
-pub struct MarkingHeaderDefinition {
+pub struct HeaderDefinition {
     pub theme: String,
     pub caption: String,
     pub marking_type: MarkingType,

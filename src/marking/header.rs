@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename = "PascalCase")]
-pub struct MarkingHeader {
+pub struct Header {
     pub id: String,
     pub order: i64,
     pub points_max: i64,
