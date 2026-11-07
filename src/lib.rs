@@ -4,7 +4,7 @@ pub mod classbook;
 pub mod endpoints;
 pub mod events;
 pub mod gdpr;
-pub mod homework;
+pub mod homeworks;
 pub mod marking;
 pub mod marks;
 pub mod other;
