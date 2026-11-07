@@ -1,4 +1,5 @@
 mod endpoints;
+#[allow(clippy::module_inception)]
 mod teaching;
 mod teaching_theme;
 

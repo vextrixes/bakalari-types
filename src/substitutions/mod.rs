@@ -4,6 +4,7 @@ mod day_cycle_info;
 mod endpoints;
 mod substitution_change;
 mod substitution_change_type;
+#[allow(clippy::module_inception)]
 mod substitutions;
 
 pub use change_display_type::*;

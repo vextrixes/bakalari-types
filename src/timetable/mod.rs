@@ -9,6 +9,7 @@ mod homework_info;
 mod hour;
 mod lesson_release;
 mod planned_classification;
+#[allow(clippy::module_inception)]
 mod timetable;
 mod timetable_change;
 mod timetable_group;

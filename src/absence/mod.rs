@@ -1,3 +1,4 @@
+#[allow(clippy::module_inception)]
 mod absence;
 mod absence_day;
 mod absence_day_response;
