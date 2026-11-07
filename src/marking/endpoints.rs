@@ -1,4 +1,4 @@
-use crate::{ContentType, Endpoint, MarkingHeaderDefinitions, MarkingHeaderOptions};
+use crate::{AtomMarks, ContentType, Endpoint, MarkingHeaderDefinitions, MarkingHeaderOptions};
 use std::marker::PhantomData;
 
 pub const SAVE_CLASSIFICATION_HEADER_ENDPOINT: Endpoint<
@@ -17,8 +17,15 @@ pub const GET_HEADER_OPTIONS_ENDPOINT: Endpoint<MarkingHeaderOptions, ()> = Endp
     _types: PhantomData,
 };
 
-pub const GET_MARKING_HEADER_DEFINITIONS_ENDPOINT: Endpoint<MarkingHeaderDefinitions, ()> = Endpoint::Get {
-    url: "/api/3/marking/atoms/{atomId}/headers",
+pub const GET_MARKING_HEADER_DEFINITIONS_ENDPOINT: Endpoint<MarkingHeaderDefinitions, ()> =
+    Endpoint::Get {
+        url: "/api/3/marking/atoms/{atomId}/headers",
+        auth: true,
+        _types: PhantomData,
+    };
+
+pub const GET_ATOM_MARKS_ENDPOINT: Endpoint<AtomMarks, ()> = Endpoint::Get {
+    url: "/api/3/marking/marks/{atomId}",
     auth: true,
     _types: PhantomData,
 };
