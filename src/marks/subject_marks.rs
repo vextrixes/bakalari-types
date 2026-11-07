@@ -1,4 +1,4 @@
-use crate::{Mark, StdType};
+use crate::{Mark, StdType, StdTypeAbbrevNullable};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -18,4 +18,5 @@ pub struct SubjectMarks {
 #[serde(rename_all = "PascalCase")]
 pub struct Marks {
     pub subjects: Vec<SubjectMarks>,
+    pub mark_options: Vec<StdTypeAbbrevNullable>
 }
