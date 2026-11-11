@@ -1,5 +1,5 @@
 use crate::timetable::{
-    Assistant, HomeworkInfo, LessonRelease, PlannedClassification, TimetableChange,
+    Assistant, HomeworkInfo, LessonRelease, PlannedClassification, Change,
 };
 use serde::{Deserialize, Serialize};
 
@@ -15,7 +15,7 @@ pub struct Atom {
     pub cycle_ids: Vec<String>,
     pub homeworks: Vec<HomeworkInfo>,
     pub homework_ids: Vec<String>,
-    pub change: Option<TimetableChange>,
+    pub change: Option<Change>,
     pub theme: Option<String>,
     pub assistants: Vec<Assistant>,
     pub notice: Option<String>,

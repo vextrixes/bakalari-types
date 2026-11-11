@@ -1,11 +1,11 @@
-use crate::classbook::ClassBookTimetableHour;
+use crate::classbook::TimetableHour;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassBookStudentTimetable {
+pub struct StudentTimetable {
     pub id: String,
     pub abbrev: Option<String>,
     pub name: String,
-    pub hours: Vec<ClassBookTimetableHour>,
+    pub hours: Vec<TimetableHour>,
 }

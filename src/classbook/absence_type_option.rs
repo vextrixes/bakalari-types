@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassBookAbsenceTypeOption {
+pub struct AbsenceTypeOption {
     pub absent_type: AbsentType,
     pub absent_kind_enabled: bool,
     pub absent_kind_required: bool,

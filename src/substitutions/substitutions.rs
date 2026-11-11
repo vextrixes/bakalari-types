@@ -1,4 +1,4 @@
-use crate::substitutions::SubstitutionChange;
+use crate::substitutions::Change;
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 
@@ -7,5 +7,5 @@ use serde::{Deserialize, Serialize};
 pub struct Substitutions {
     pub from: DateTime<FixedOffset>,
     pub to: DateTime<FixedOffset>,
-    pub changes: Vec<SubstitutionChange>,
+    pub changes: Vec<Change>,
 }

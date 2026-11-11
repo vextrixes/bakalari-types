@@ -11,8 +11,8 @@ mod lesson_release;
 mod planned_classification;
 #[allow(clippy::module_inception)]
 mod timetable;
-mod timetable_change;
-mod timetable_group;
+mod change;
+mod group;
 
 pub use assistance_atom::*;
 pub use assistant::*;
@@ -26,5 +26,5 @@ pub use hour::*;
 pub use lesson_release::*;
 pub use planned_classification::*;
 pub use timetable::*;
-pub use timetable_change::*;
-pub use timetable_group::*;
+pub use change::*;
+pub use group::*;

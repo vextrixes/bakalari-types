@@ -1,4 +1,4 @@
-use crate::marks::MarkConfirmationStatus;
+use crate::marks::ConfirmationStatus;
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 
@@ -15,7 +15,7 @@ pub struct Mark {
     pub calculated_mark_text: String,
     pub max_points: i64,
     // pub is_predictor_mark: bool, //Either nullable or non existant TODO
-    pub mark_confirmation_state: MarkConfirmationStatus,
+    pub mark_confirmation_state: ConfirmationStatus,
     pub caption: Option<String>,
     pub theme: Option<String>,
     pub mark_text: Option<String>,

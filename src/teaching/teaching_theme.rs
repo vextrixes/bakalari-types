@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct TeachingTheme {
+pub struct Theme {
     pub date: DateTime<FixedOffset>,
     pub theme: String,
     pub note: String,

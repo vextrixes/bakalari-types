@@ -1,5 +1,5 @@
 use crate::{
-    classbook::{ClassBookGroupInfo, ClassBookLessonTag, ClassBookLevel},
+    classbook::{GroupInfo, LessonTag, Level},
     common_types::StdTypeAbbrevNullable,
 };
 use chrono::{DateTime, FixedOffset};
@@ -7,12 +7,12 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassBookRecord {
+pub struct Record {
     pub id: String,
     pub lesson_id: String,
-    pub tags: Vec<ClassBookLessonTag>,
+    pub tags: Vec<LessonTag>,
     pub hour_id: i64,
-    pub groups: Vec<ClassBookGroupInfo>,
+    pub groups: Vec<GroupInfo>,
     pub editable_groups: Vec<String>,
     pub start: i64,
     pub duration: i64,
@@ -26,5 +26,5 @@ pub struct ClassBookRecord {
     pub subject: Option<StdTypeAbbrevNullable>,
     pub change_text: Option<String>,
     pub supervision: Option<StdTypeAbbrevNullable>,
-    pub class_book_level: ClassBookLevel,
+    pub class_book_level: Level,
 }

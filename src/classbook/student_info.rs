@@ -2,9 +2,10 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassBookGroupInfo {
+pub struct StudentInfo {
     pub id: String,
-    pub class_id: String,
+    pub name: String,
+    pub is_adult: bool,
+    pub registration_number: i64,
     pub abbrev: Option<String>,
-    pub name: Option<String>,
 }

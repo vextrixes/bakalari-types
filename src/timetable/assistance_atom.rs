@@ -1,4 +1,4 @@
-use crate::timetable::TimetableChange;
+use crate::timetable::Change;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -13,5 +13,5 @@ pub struct AssistanceAtom {
     pub teacher_id: Option<String>,
     pub room_id: Option<String>,
     pub student_id: Option<String>,
-    pub change: Option<TimetableChange>,
+    pub change: Option<Change>,
 }

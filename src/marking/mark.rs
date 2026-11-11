@@ -1,4 +1,4 @@
-use crate::marks::MarkConfirmationStatus;
+use crate::marks::ConfirmationStatus;
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 
@@ -15,7 +15,7 @@ pub struct Mark {
     pub read_only_description: Option<String>,
     pub publish_date: Option<DateTime<FixedOffset>>,
     pub teacher_id: Option<String>,
-    pub mark_confirmation_state: Option<MarkConfirmationStatus>,
+    pub mark_confirmation_state: Option<ConfirmationStatus>,
     pub theme: Option<String>,
     pub verbal_evaluation: Option<String>,
     pub internal_note: Option<String>,

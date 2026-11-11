@@ -1,4 +1,4 @@
-use crate::marks::MarkConfirmationStatus;
+use crate::marks::ConfirmationStatus;
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Serialize};
 
@@ -12,7 +12,7 @@ pub struct SaveMarkRequest {
     pub mark_value: String,
     pub theme: Option<String>, //check nullability
     pub student_id: String,
-    pub mark_confirmation_state: Option<MarkConfirmationStatus>, //check nullability
+    pub mark_confirmation_state: Option<ConfirmationStatus>, //check nullability
     pub verbal_evaluation: Option<String>,                       //check nullability
     pub internal_note: Option<String>,                           //check nullability
     pub id: String,

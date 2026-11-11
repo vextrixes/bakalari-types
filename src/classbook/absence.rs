@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct ClassBookAbsence {
+pub struct Absence {
     pub minutes: i64,
     pub absent_type: AbsentType,
     pub hour_id: String,
