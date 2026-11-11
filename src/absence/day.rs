@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct AbsenceDay {
+pub struct Day {
     pub date: DateTime<FixedOffset>,
     pub unsolved: u16,
     pub ok: u16,

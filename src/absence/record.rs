@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-pub struct AbsenceRecord {
+pub struct Record {
     pub minutes: i64,
     pub absent_type: AbsentType,
     pub hour_id: Option<String>,

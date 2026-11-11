@@ -1,9 +1,9 @@
-use crate::{absence::AbsenceRecord, timetable::Hour};
+use crate::{absence::Record, timetable::Hour};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct ExcuseAbsenceResponse {
-    pub absences: Vec<AbsenceRecord>,
+    pub absences: Vec<Record>,
     pub hours: Vec<Hour>,
 }
