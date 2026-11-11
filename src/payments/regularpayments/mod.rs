@@ -1,0 +1,25 @@
+mod payment;
+mod payment_detail;
+mod payment_status;
+mod payments_summary;
+mod prescription;
+mod prescription_detail;
+mod prescription_detail_item;
+mod prescription_document_line;
+mod prescription_regulation_line;
+mod prescription_state;
+mod prescription_student;
+mod prescription_student_detail;
+
+pub use payment::*;
+pub use payment_detail::*;
+pub use payment_status::*;
+pub use payments_summary::*;
+pub use prescription::*;
+pub use prescription_detail::*;
+pub use prescription_detail_item::*;
+pub use prescription_document_line::*;
+pub use prescription_regulation_line::*;
+pub use prescription_state::*;
+pub use prescription_student::*;
+pub use prescription_student_detail::*;

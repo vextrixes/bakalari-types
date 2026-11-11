@@ -4,9 +4,9 @@ use crate::{
         Monthly, PaymentInfo, Summary, TeacherDocumentDetail, TeacherDocumentsMonthly,
         TeacherStudentsItem, TeacherSummary,
     },
-    payments::{
-        RegularPayment, RegularPaymentDetail, RegularPaymentsSummary, RegularPrescription,
-        RegularPrescriptionDetail, RegularPrescriptionStudent, RegularPrescriptionStudentDetail,
+    payments::regularpayments::{
+        Payment, PaymentDetail, PaymentsSummary, Prescription,
+        PrescriptionDetail, PrescriptionStudent, PrescriptionStudentDetail,
     },
 };
 use std::marker::PhantomData;
@@ -17,13 +17,13 @@ pub const CLASS_FUND_PAYMENT_INFO_ENDPOINT: Endpoint<PaymentInfo, ()> = Endpoint
     _types: PhantomData,
 };
 
-pub const REGULAR_PAYMENTS_INFO_ENDPOINT: Endpoint<Vec<RegularPayment>, ()> = Endpoint::Get {
+pub const REGULAR_PAYMENTS_INFO_ENDPOINT: Endpoint<Vec<Payment>, ()> = Endpoint::Get {
     url: "/api/3/payments/regularpayments",
     auth: true,
     _types: PhantomData,
 };
 
-pub const REGULAR_PAYMENTS_SUMMARY_ENDPOINT: Endpoint<RegularPaymentsSummary, ()> = Endpoint::Get {
+pub const REGULAR_PAYMENTS_SUMMARY_ENDPOINT: Endpoint<PaymentsSummary, ()> = Endpoint::Get {
     url: "/api/3/payments/regularpayments/summary",
     auth: true,
     _types: PhantomData,
@@ -41,7 +41,7 @@ pub const CLASS_FUND_SUMMARY_ENDPOINT: Endpoint<Summary, ()> = Endpoint::Get {
     _types: PhantomData,
 };
 
-pub const REGULAR_PAYMENT_DETAIL_ENDPOINT: Endpoint<RegularPaymentDetail, ()> = Endpoint::Get {
+pub const REGULAR_PAYMENT_DETAIL_ENDPOINT: Endpoint<PaymentDetail, ()> = Endpoint::Get {
     url: "/api/3/payments/regularpayments/detail/{paymentId}",
     auth: true,
     _types: PhantomData,
@@ -54,7 +54,7 @@ pub const CLASS_FUND_TEACHER_DOCUMENT_DETAIL_ENDPOINT: Endpoint<TeacherDocumentD
         _types: PhantomData,
     };
 
-pub const REGULAR_PRESCRIPTIONS_ENDPOINT: Endpoint<Vec<RegularPrescription>, ()> = Endpoint::Get {
+pub const REGULAR_PRESCRIPTIONS_ENDPOINT: Endpoint<Vec<Prescription>, ()> = Endpoint::Get {
     url: "/api/3/payments/regularpayments/teacher/prescriptions",
     auth: true,
     _types: PhantomData,
@@ -80,7 +80,7 @@ pub const CLASS_FUND_TEACHER_SUMMARY_ENDPOINT: Endpoint<TeacherSummary, ()> = En
     _types: PhantomData,
 };
 
-pub const REGULAR_PRESCRIPTION_DETAIL_ENDPOINT: Endpoint<RegularPrescriptionDetail, ()> =
+pub const REGULAR_PRESCRIPTION_DETAIL_ENDPOINT: Endpoint<PrescriptionDetail, ()> =
     Endpoint::Get {
         url: "/api/3/payments/regularpayments/teacher/prescriptions/{prescriptionId}",
         auth: true,
@@ -88,7 +88,7 @@ pub const REGULAR_PRESCRIPTION_DETAIL_ENDPOINT: Endpoint<RegularPrescriptionDeta
     };
 
 pub const REGULAR_PRESCRIPTION_STUDENT_DETAIL_ENDPOINT: Endpoint<
-    RegularPrescriptionStudentDetail,
+    PrescriptionStudentDetail,
     (),
 > = Endpoint::Get {
     url: "/api/3/payments/regularpayments/teacher/prescriptions/{prescriptionId}/students/{studentId}",
@@ -96,7 +96,7 @@ pub const REGULAR_PRESCRIPTION_STUDENT_DETAIL_ENDPOINT: Endpoint<
     _types: PhantomData,
 };
 
-pub const REGULAR_PRESCRIPTION_STUDENTS_ENDPOINT: Endpoint<Vec<RegularPrescriptionStudent>, ()> =
+pub const REGULAR_PRESCRIPTION_STUDENTS_ENDPOINT: Endpoint<Vec<PrescriptionStudent>, ()> =
     Endpoint::Get {
         url: "/api/3/payments/regularpayments/teacher/prescriptions/{prescriptionId}/students",
         auth: true,
