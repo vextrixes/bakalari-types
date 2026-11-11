@@ -13,7 +13,7 @@ pub struct SaveMarkRequest {
     pub theme: Option<String>, //check nullability
     pub student_id: String,
     pub mark_confirmation_state: Option<ConfirmationStatus>, //check nullability
-    pub verbal_evaluation: Option<String>,                       //check nullability
-    pub internal_note: Option<String>,                           //check nullability
+    pub verbal_evaluation: Option<String>,                   //check nullability
+    pub internal_note: Option<String>,                       //check nullability
     pub id: String,
 }

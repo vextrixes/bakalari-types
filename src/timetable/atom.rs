@@ -1,6 +1,4 @@
-use crate::timetable::{
-    Assistant, HomeworkInfo, LessonRelease, PlannedClassification, Change,
-};
+use crate::timetable::{Assistant, Change, HomeworkInfo, LessonRelease, PlannedClassification};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

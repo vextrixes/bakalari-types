@@ -1,7 +1,6 @@
 use crate::{
     classbook::{
-        AbsenceRecordResult, AbsenceResponse, Entries,
-        LessonPast, LessonTag, SaveAbsenceRequest,
+        AbsenceRecordResult, AbsenceResponse, Entries, LessonPast, LessonTag, SaveAbsenceRequest,
         SaveRecordRequest, StudentsTimetableResponse,
     },
     endpoints::{ContentType, Endpoint},
@@ -15,12 +14,11 @@ pub const EDIT_CLASSBOOK_ENDPOINT: Endpoint<(), SaveRecordRequest> = Endpoint::P
     _types: PhantomData,
 };
 
-pub const PREVIOUS_LESSON_INFO_CLASSBOOK_ENDPOINT: Endpoint<LessonPast, ()> =
-    Endpoint::Get {
-        url: "/api/3/lesson/{lessonId}/past",
-        auth: true,
-        _types: PhantomData,
-    };
+pub const PREVIOUS_LESSON_INFO_CLASSBOOK_ENDPOINT: Endpoint<LessonPast, ()> = Endpoint::Get {
+    url: "/api/3/lesson/{lessonId}/past",
+    auth: true,
+    _types: PhantomData,
+};
 
 pub const LESSON_TAGS_CLASSBOOK_ENDPOINT: Endpoint<Vec<LessonTag>, ()> = Endpoint::Get {
     url: "/api/3/classbook/lessonTags",
@@ -47,12 +45,10 @@ pub const CLASSBOOK_STUDENT_TIMETABLE_ENDPOINT: Endpoint<StudentsTimetableRespon
         _types: PhantomData,
     };
 
-pub const EDIT_CLASSBOOK_ABSENCE_ENDPOINT: Endpoint<
-    AbsenceRecordResult,
-    Vec<SaveAbsenceRequest>,
-> = Endpoint::Put {
-    url: "/api/3/lesson/{lessonId}/absence",
-    auth: true,
-    content_type: ContentType::Json,
-    _types: PhantomData,
-};
+pub const EDIT_CLASSBOOK_ABSENCE_ENDPOINT: Endpoint<AbsenceRecordResult, Vec<SaveAbsenceRequest>> =
+    Endpoint::Put {
+        url: "/api/3/lesson/{lessonId}/absence",
+        auth: true,
+        content_type: ContentType::Json,
+        _types: PhantomData,
+    };
